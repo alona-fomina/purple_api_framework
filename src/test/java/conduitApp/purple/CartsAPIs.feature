@@ -182,114 +182,236 @@ Feature: Validation for Carts APIs
     * match delete_active_cart_response.lineItems == '#[0]'
 
     Examples:
-      | product_name                     | sku         |
-      | Weighted Blanket                 | 10-38-13050 |
-      | Purple Plus Mattress             | 10-21-23964 |
-      | Replacement Seat Cushion Cover   | 40-41-42096 |
-      | Replacement Seat Cushion Cover   | 40-41-42002 |
-      | Replacement Seat Cushion Cover   | 40-41-42019 |
-      | Replacement Seat Cushion Cover   | 40-41-42033 |
-      | Replacement Seat Cushion Cover   | 40-41-42040 |
-      | Replacement Seat Cushion Cover   | 40-41-42064 |
-      | Replacement Seat Cushion Cover   | 40-41-42071 |
-      | Replacement Seat Cushion Cover   | 40-41-42003 |
-      | Replacement Seat Cushion Cover   | 40-41-42020 |
-      | Replacement Seat Cushion Cover   | 40-41-42035 |
-      | Replacement Seat Cushion Cover   | 40-41-42041 |
-      | Replacement Seat Cushion Cover   | 40-41-42065 |
-      | Replacement Seat Cushion Cover   | 40-41-42097 |
-      | Replacement Seat Cushion Cover   | 40-41-42072 |
-      | Replacement Seat Cushion Cover   | 40-41-42034 |
-      | Purple Harmony™ Pillow           | 10-31-12890 |
-      | Purple Harmony™ Pillow           | 10-31-12895 |
-      | Purple Harmony™ Pillow           | 10-31-12911 |
-      | Purple Harmony™ Pillow           | 10-31-12918 |
-      | Purple Harmony™ Pillow           | 10-31-12914 |
-      | Purple Harmony™ Pillow           | 10-31-12913 |
-    #   | Sleepy Jones + Purple Pajamas    | 10-90-10075
-      | Sleepy Jones + Purple Pajamas    | 10-90-10072 |
-      | Sleepy Jones + Purple Pajamas    | 10-90-10076 |
-      | Sleepy Jones + Purple Pajamas    | 10-90-10073 |
-      | Sleepy Jones + Purple Pajamas    | 10-90-10077 |
-    #   | Sleepy Jones + Purple Pajamas    | 10-90-10074
-      | Sleepy Jones + Purple Pajamas    | 10-90-10078 |
-      | Sleepy Jones + Purple Pajamas    | 10-90-10083 |
-      | Sleepy Jones + Purple Pajamas    | 10-90-10079 |
-      | Sleepy Jones + Purple Pajamas    | 10-90-10084 |
-      | Sleepy Jones + Purple Pajamas    | 10-90-10080 |
-      | Sleepy Jones + Purple Pajamas    | 10-90-10085 |
-      | Sleepy Jones + Purple Pajamas    | 10-90-10086 |
-      | Sleepy Jones + Purple Pajamas    | 10-90-10082 |
-      | Portable Seat Cushion            | 10-41-12583 |
-      | Purple SoftStretch Sheets        | 10-38-22830 |
-      | Purple SoftStretch Sheets        | 10-38-22840 |
-      | Purple SoftStretch Sheets        | 10-38-22830 |
-      | Simply Seat Cushion              | 10-41-12576 |
-      | The Purple PowerBase             | 10-38-12939 |
-      | The Purple PowerBase             | 10-38-12946 |
-      | The Purple PowerBase             | 10-21-13027 |
-      | Purple Bed Frame                 | 10-38-45897 |
-      | Purple Bed Frame                 | 10-38-45898 |
-      | Purple Bed Frame                 | 10-38-45899 |
-      | Purple Bed Frame                 | 10-38-45900 |
-      | Purple Bed Frame                 | 10-38-45901 |
-      | Purple Bed Frame                 | 10-38-45902 |
-      | Purple Bed Frame                 | 10-38-45903 |
-      | Purple Bed Frame                 | 10-38-45904 |
-      | Purple Bed Frame                 | 10-38-45906 |
-      | Purple Bed Frame                 | 10-38-45907 |
-      | Purple Bed Frame                 | 10-38-45896 |
-      | Purple Bed Frame                 | 10-38-45905 |
-      | Back Cushion                     | 10-41-12378 |
-      | Foldaway Seat Cushion            | 10-41-12574 |
-      | Portable Seat Cushion            | 10-41-12583 |
-      | Royal Seat Cushion               | 10-41-12573 |
-      | Ultimate Seat Cushion1           | 10-41-12564 |
-      | Back Cushion                     | 10-41-12378 |
-      | Simply Seat Cushion              | 10-41-12576 |
-      | Double Seat Cushion              | 10-41-12540 |
-#      | Plush Pillow                     | 10-31-12857
-      | Plush Pillow                     | 10-31-12860 |
-      | Purple Pillow Booster            | 10-31-13100 |
-      | The Purple Mattress Protector    | 10-38-13731 |
-      | The Purple Mattress Protector    | 10-38-13924 |
-      | The Purple Mattress Protector    | 10-38-13748 |
-      | The Purple Mattress Protector    | 10-38-13900 |
-      | The Purple Mattress Protector    | 10-38-13994 |
-      | The Purple Mattress Protector    | 10-38-13917 |
-      | The Purple Mattress Protector    | 10-38-13918 |
-      | Headboard                        | 10-38-45888 |
-      | The Purple Squishy               | 10-11-18429 |
-      | Purple Complete Comfort Sheets   | 10-38-23001 |
-      | Purple Complete Comfort Sheets   | 10-38-23005 |
-      | Purple Hybrid Premier 4 Mattress | 10-21-60013 |
-      | Purple Hybrid Premier 4 Mattress | 10-21-60020 |
-      | Purple Hybrid Premier 4 Mattress | 10-21-60014 |
-      | Purple Hybrid Premier 4 Mattress | 10-21-60015 |
-      | Purple Hybrid Premier 4 Mattress | 10-21-60013 |
-      | Purple Hybrid Premier 4 Mattress | 10-21-60016 |
-      | Purple Hybrid Premier 4 Mattress | 10-21-60058 |
-      | Purple Platform Bed Frame        | 10-38-52891 |
-      | Purple Platform Bed Frame        | 10-38-52892 |
-      | Purple Platform Bed Frame        | 10-38-52893 |
-      | Purple Platform Bed Frame        | 10-38-52846 |
-      | Purple Platform Bed Frame        | 10-38-52815 |
-      | Purple Platform Bed Frame        | 10-38-52822 |
-      | Purple Hybrid Mattress           | 10-21-23968 |
-      | Purple Hybrid Mattress           | 10-21-60018 |
-      | Purple Hybrid Mattress           | 10-21-60006 |
-      | Purple Hybrid Mattress           | 10-21-60007 |
-      | Purple Hybrid Mattress           | 10-21-60008 |
-      | Purple Hybrid Mattress           | 10-21-60028 |
-
-            
-            
-            
-
-       
-
-
-
+      | product_name                       | sku         |
+      | Weighted Blanket                   | 10-38-13050 |
+      | Purple Plus Mattress               | 10-21-23964 |
+      | Replacement Seat Cushion Cover     | 40-41-42096 |
+      | Replacement Seat Cushion Cover     | 40-41-42002 |
+      | Replacement Seat Cushion Cover     | 40-41-42019 |
+      | Replacement Seat Cushion Cover     | 40-41-42033 |
+      | Replacement Seat Cushion Cover     | 40-41-42040 |
+      | Replacement Seat Cushion Cover     | 40-41-42064 |
+      | Replacement Seat Cushion Cover     | 40-41-42071 |
+      | Replacement Seat Cushion Cover     | 40-41-42003 |
+      | Replacement Seat Cushion Cover     | 40-41-42020 |
+      | Replacement Seat Cushion Cover     | 40-41-42035 |
+      | Replacement Seat Cushion Cover     | 40-41-42041 |
+      | Replacement Seat Cushion Cover     | 40-41-42065 |
+      | Replacement Seat Cushion Cover     | 40-41-42097 |
+      | Replacement Seat Cushion Cover     | 40-41-42072 |
+      | Replacement Seat Cushion Cover     | 40-41-42034 |
+      | Purple Harmony™ Pillow             | 10-31-12890 |
+      | Purple Harmony™ Pillow             | 10-31-12895 |
+      | Purple Harmony™ Pillow             | 10-31-12911 |
+      | Purple Harmony™ Pillow             | 10-31-12918 |
+      | Purple Harmony™ Pillow             | 10-31-12914 |
+      | Purple Harmony™ Pillow             | 10-31-12913 |
+#      | Sleepy Jones + Purple Pajamas    | 10-90-10075   |
+      | Sleepy Jones + Purple Pajamas      | 10-90-10072 |
+      | Sleepy Jones + Purple Pajamas      | 10-90-10076 |
+      | Sleepy Jones + Purple Pajamas      | 10-90-10073 |
+      | Sleepy Jones + Purple Pajamas      | 10-90-10077 |
+#      | Sleepy Jones + Purple Pajamas    | 10-90-10074   |
+      | Sleepy Jones + Purple Pajamas      | 10-90-10078 |
+      | Sleepy Jones + Purple Pajamas      | 10-90-10083 |
+      | Sleepy Jones + Purple Pajamas      | 10-90-10079 |
+      | Sleepy Jones + Purple Pajamas      | 10-90-10084 |
+      | Sleepy Jones + Purple Pajamas      | 10-90-10080 |
+      | Sleepy Jones + Purple Pajamas      | 10-90-10085 |
+      | Sleepy Jones + Purple Pajamas      | 10-90-10086 |
+      | Sleepy Jones + Purple Pajamas      | 10-90-10082 |
+      | Portable Seat Cushion              | 10-41-12583 |
+      | Purple SoftStretch Sheets          | 10-38-22830 |
+      | Purple SoftStretch Sheets          | 10-38-22840 |
+      | Purple SoftStretch Sheets          | 10-38-22830 |
+      | Simply Seat Cushion                | 10-41-12576 |
+      | The Purple PowerBase               | 10-38-12939 |
+      | The Purple PowerBase               | 10-38-12946 |
+      | The Purple PowerBase               | 10-21-13027 |
+      | Purple Bed Frame                   | 10-38-45897 |
+      | Purple Bed Frame                   | 10-38-45898 |
+      | Purple Bed Frame                   | 10-38-45899 |
+      | Purple Bed Frame                   | 10-38-45900 |
+      | Purple Bed Frame                   | 10-38-45901 |
+      | Purple Bed Frame                   | 10-38-45902 |
+      | Purple Bed Frame                   | 10-38-45903 |
+      | Purple Bed Frame                   | 10-38-45904 |
+      | Purple Bed Frame                   | 10-38-45906 |
+      | Purple Bed Frame                   | 10-38-45907 |
+      | Purple Bed Frame                   | 10-38-45896 |
+      | Purple Bed Frame                   | 10-38-45905 |
+      | Back Cushion                       | 10-41-12378 |
+      | Foldaway Seat Cushion              | 10-41-12574 |
+      | Portable Seat Cushion              | 10-41-12583 |
+      | Royal Seat Cushion                 | 10-41-12573 |
+      | Ultimate Seat Cushion              | 10-41-12564 |
+      | Back Cushion                       | 10-41-12378 |
+      | Simply Seat Cushion                | 10-41-12576 |
+      | Double Seat Cushion                | 10-41-12540 |
+#      | Plush Pillow                     | 10-31-12857   |
+      | Plush Pillow                       | 10-31-12860 |
+      | The Purple Pillow Boosters         | 10-31-13100 |
+      | The Purple Mattress Protector      | 10-38-13731 |
+      | The Purple Mattress Protector      | 10-38-13924 |
+      | The Purple Mattress Protector      | 10-38-13748 |
+      | The Purple Mattress Protector      | 10-38-13900 |
+      | The Purple Mattress Protector      | 10-38-13994 |
+      | The Purple Mattress Protector      | 10-38-13917 |
+      | The Purple Mattress Protector      | 10-38-13918 |
+      | Headboard                          | 10-38-45888 |
+      | The Purple Squishy                 | 10-11-18429 |
+      | Purple Complete Comfort Sheets     | 10-38-23001 |
+      | Purple Complete Comfort Sheets     | 10-38-23005 |
+      | Purple Hybrid Premier 4 Mattress   | 10-21-60013 |
+      | Purple Hybrid Premier 4 Mattress   | 10-21-60013 |
+      | Purple Hybrid Premier 4 Mattress   | 10-21-60020 |
+      | Purple Hybrid Premier 4 Mattress   | 10-21-60014 |
+      | Purple Hybrid Premier 4 Mattress   | 10-21-60015 |
+      | Purple Hybrid Premier 4 Mattress   | 10-21-60016 |
+      | Purple Hybrid Premier 4 Mattress   | 10-21-60058 |
+      | Purple Hybrid Mattress             | 10-21-23968 |
+      | Purple Hybrid Mattress OOP         | 10-21-60018 |
+      | Purple Platform Bed                | 10-38-52846 |
+      | Purple Platform Bed                | 10-38-52815 |
+      | Purple Platform Bed                | 10-38-52822 |
+      | Purple Hybrid Mattress             | 10-21-23968 |
+      | Purple Hybrid Mattress OOP         | 10-21-60018 |
+      | Purple Hybrid Mattress OOP         | 10-21-60006 |
+      | Purple Hybrid Mattress OOP         | 10-21-60007 |
+      | Purple Hybrid Mattress OOP         | 10-21-60008 |
+      | Purple Hybrid Mattress OOP         | 10-21-60028 |
+      | Royal Seat Cushion                 | 10-41-12573 |
+      | Ultimate Seat Cushion              | 10-41-12564 |
+      | Purple Ascent® Adjustable Base     | 10-38-12958 |
+      | Purple Ascent® Adjustable Base     | 10-38-12959 |
+      | Purple Ascent® Adjustable Base     | 10-38-12956 |
+      | Purple Ascent® Adjustable Base     | 10-38-12957 |
+      | TwinCloud Pillow                   | 10-31-12919 |
+      | TwinCloud Pillow                   | 10-31-12920 |
+      | Complete Comfort Pillowcase Set    | 10-38-23031 |
+      | Complete Comfort Pillowcase Set    | 10-38-23036 |
+      | Complete Comfort Pillowcase Set    | 10-38-23030 |
+      | Complete Comfort Pillowcase Set    | 10-38-23035 |
+      | Complete Comfort Pillowcase Set    | 10-38-23034 |
+      | Complete Comfort Pillowcase Set    | 10-38-23039 |
+      | Complete Comfort Pillowcase Set    | 10-38-23032 |
+      | Complete Comfort Pillowcase Set    | 10-38-23037 |
+      | Kid Sheets                         | 10-38-12854 |
+      | Kid Sheets                         | 10-38-12852 |
+      | Kid Sheets                         | 10-38-12855 |
+#    | Sample1Harmony Replacement Core| 10-31-12910 |
+      | The Purple Mattress                | 10-21-23617 |
+      | The Purple Mattress                | 10-21-23618 |
+      | The Purple Mattress                | 10-21-23620 |
+      | The Purple Mattress                | 10-21-23625 |
+      | The Purple Mattress                | 10-21-23632 |
+      | The Purple Mattress                | 10-21-23960 |
+      | The Purple Mattress                | 10-21-23638 |
+      | Double Seat Cushion                | 10-41-12540 |
+      | Pet Bed Replacement Covers         | 40-22-00010 |
+      | Pet Bed Replacement Covers         | 40-22-00020 |
+      | Pet Bed Replacement Covers         | 40-22-00030 |
+      | Kid Purple Pillow                  | 10-31-12869 |
+      | Kid Purple Pillow                  | 10-31-12872 |
+      | Kid Purple Pillow                  | 10-31-12871 |
+      | Kid Purple Pillow                  | 10-31-12873 |
+#      | Purple Pet Bed      | 10-22-10100| -> unpublished but tag as published
+#      | Purple Pet Bed      | 10-22-10200|
+#      | Purple Pet Bed      | 10-22-10300|
+#      | (Obsolete)Purple SoftStretch Sheets | 10-38-228301 |-> not existed
+#      | (Obsolete)Purple SoftStretch Sheets | 10-38-228401 |
+#      | (Obsolete)Purple SoftStretch Sheets | 10-38-228351 |
+#      | (Obsolete)Purple SoftStretch Sheets | 10-38-228350|
+#      | (Obsolete)Purple SoftStretch Sheets |10-38-228551 |
+#      | (Obsolete)Purple SoftStretch Sheets |110-38-22845 |
+#      | (Obsolete)Purple SoftStretch Sheets |10-38-228311 |
+#      | (Obsolete)Purple SoftStretch Sheets |10-38-228411|
+#      | (Obsolete)Purple SoftStretch Sheets |10-38-228361|
+#      | (Obsolete)Purple SoftStretch Sheets |10-38-228511 |
+#      | (Obsolete)Purple SoftStretch Sheets |10-38-228561|
+#      | (Obsolete)Purple SoftStretch Sheets |10-38-228461 |
+#      | (Obsolete)Purple SoftStretch Sheets |10-38-228321 |
+#      | (Obsolete)Purple SoftStretch Sheets |10-38-228371|
+#      | (Obsolete)Purple SoftStretch Sheets |10-38-228521|
+#      | (Obsolete)Purple SoftStretch Sheets |10-38-228571|
+#      | (Obsolete)Purple SoftStretch Sheets |10-38-228471|
+#      | (Obsolete)Purple SoftStretch Sheets |10-38-228331|
+#      | (Obsolete)Purple SoftStretch Sheets |10-38-228431|
+      | The Purple Sheets                  | 10-38-12762 |
+      | The Purple Sheets                  | 10-38-12847 |
+      | The Purple Sheets                  | 10-38-12830 |
+      | The Purple Sheets                  | 10-38-12848 |
+#      | The Purple Sheets | 10-38-12779 |->unpublished
+      | The Purple Sheets                  | 10-38-12823 |
+      | The Purple Sheets                  | 10-38-12816 |
+      | The Purple Sheets                  | 10-38-12849 |
+      | The Purple Sheets                  | 10-38-12786 |
+      | The Purple Sheets                  | 10-38-12809 |
+      | The Purple Sheets                  | 10-38-12793 |
+      | The Purple Sheets                  | 10-38-12850 |
+      | The Purple Sheets                  | 10-38-12790 |
+      | The Purple Sheets                  | 10-38-12787 |
+      | The Purple Sheets                  | 10-38-12788 |
+      | The Purple Sheets                  | 10-38-12789 |
+      | The Purple Pillow                  | 10-31-12863 |
+#      | MPOS Test Product (2) | 11-24-11242 |-> not existed
+      | Purple Duvet                       | 10-38-13021 |
+      | Purple Duvet                       | 10-38-13026 |
+      | Purple Duvet                       | 10-38-13031 |
+      | Bearaby Weighted Blanket           | 10-38-13051 |
+      | Platform Base Replacement Hardware | 10-38-12897 |
+      | Platform Base Replacement Hardware | 10-38-12896 |
+#      | The Purple Face Mask 2 Pack| 10-47-20000|
+      | Kid Purple Mattress                | 10-21-60524 |
+      | Foldaway Seat Cushion              | 10-41-12574 |
+      | Purple SoftStretch Pillowcases     | 10-38-22862 |
+      | Purple SoftStretch Pillowcases     | 10-38-22861 |
+      | Purple SoftStretch Pillowcases     | 10-38-22860 |
+      | Purple SoftStretch Pillowcases     | 10-38-22863 |
+      | Purple SoftStretch Pillowcases     | 10-38-22864 |
+      | Purple SoftStretch Pillowcases     | 10-38-22865 |
+      | Purple SoftStretch Pillowcases     | 10-38-22868 |
+      | Purple SoftStretch Pillowcases     | 10-38-22866 |
+#      | Purple SoftStretch Pillowcases | 10-38-22869 |
+      | Purple SoftStretch Pillowcases     | 10-38-22867 |
+      | Purple SoftStretch Pillowcases     | 10-38-22870 |
+      | Purple SoftStretch Pillowcases     | 10-38-22871 |
+      | Purple Cloud Pillow                | 10-31-12921 |
+      | Purple Cloud Pillow                | 10-31-12922 |
+      | Premium Sleep Mask                 | 10-21-68268 |
+      | Replacement Covers                 | 40-21-42018 |
+      | Replacement Covers                 | 40-21-42748 |
+      | Replacement Covers                 | 40-21-42025 |
+      | Replacement Covers                 | 40-21-42032 |
+      | Replacement Covers                 | 40-21-42060 |
+      | Replacement Covers                 | 40-21-42150 |
+      | Replacement Covers                 | 40-21-42155 |
+      | Replacement Covers                 | 40-21-42160 |
+      | Replacement Covers                 | 40-21-42170 |
+      | Replacement Covers                 | 40-21-42180 |
+      | Replacement Covers                 | 40-21-42190 |
+      | Replacement Covers                 | 40-21-42195 |
+      | Replacement Covers                 | 40-21-42200 |
+      | Replacement Covers                 | 40-21-42210 |
+      | Replacement Covers                 | 40-21-42220 |
+      | Replacement Covers                 | 40-21-42230 |
+      | Replacement Covers                 | 40-21-42235 |
+      | Replacement Covers                 | 40-21-42240 |
+      | Replacement Covers                 | 40-21-42250 |
+      | Replacement Covers                 | 40-21-42260 |
+      | Purple Foundation                  | 10-38-45862 |
+      | Purple Foundation                  | 10-38-45868 |
+      | Purple Foundation                  | 10-38-45863 |
+      | Purple Foundation                  | 10-38-45869 |
+      | Purple Foundation                  | 10-38-45864 |
+      | Purple Foundation                  | 10-38-45870 |
+      | Purple Foundation                  | 10-38-45865 |
+      | Purple Foundation                  | 10-38-45871 |
+      | Purple Foundation                  | 10-38-45866 |
+      | Purple Foundation                  | 10-38-45872 |
+      | Purple Foundation                  | 10-38-45867 |
+      | Purple Foundation                  | 10-38-45873 |
+      | Precious Dreams Donation           | 15819       |
 
 # Examples:
 # |product|status code|
