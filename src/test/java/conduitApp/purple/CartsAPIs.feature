@@ -39,6 +39,25 @@ Feature: Validation for Carts APIs
             }
             """
 
+  Scenario: Sets shipping address to the active cart
+    Given path '/line-items'
+    And request [{"sku": "10-38-13050","quantitiy": 1}]
+    And header Authorization = 'Bearer '+ token
+    When method Post
+    Then status 200
+    * def line_itemid = response.lineItems[0].id
+
+    Given path '/shipping-address'
+    And request {"firstName":"Knopa","lastName":"Fomina","streetAddress":"352 Pembroke Court","postalCode":"60193","city":"Chicago","state":"IL","country":"US","email":"vitalik.fomin@gmail.com","apartment":"8"}
+    And header Authorization = 'Bearer '+ token
+    When method Post
+    Then status 200
+
+    Given path '/line-items/' + line_itemid
+    And header Authorization = 'Bearer '+ token
+    When method Delete
+    Then status 200
+
 
   Scenario Outline: Add, update and remove -<product_name>- to cart
 #    Before everything getting the active cart and validating it is empty
