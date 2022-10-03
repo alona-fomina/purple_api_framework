@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("99d4690a-c3cb-4ea3-be40-cf24bb756441",{name:"alona.f"});
+    posthog.capture("report_feature",{karate_version:"1.2.0",karate_meta:null});
+  }
+});
+</script>
+  
+    <title>src.test.java.conduitApp.purple.CartsAPIs</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-10-03 03:27:33 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:9]"><span>[1:9]</span> <span>Get Active Cart</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/conduitApp/purple/CartsAPIs.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Validation for Carts APIs</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:9]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">regression</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:9]</span>
+                <span class="scenario-name">Get Active Cart</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>923</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:9]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:9]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = &quot;eyJraWQiOiJ1cy13ZXN0LTIxIiwidHlwIjoiSldTIiwiYWxnIjoiUlM1MTIifQ.eyJzdWIiOiJ1cy13ZXN0LTI6YzE1ZmZlZmUtNDAwZS00MWVmLWIzZTAtM2FkYTk3Y2RhM2FiIiwiYXVkIjoidXMtd2VzdC0yOmEyZjllZTBlLWU5MTMtNGM2ZC1hYjljLTM5NGMyZDFkMjU1ZCIsImFtciI6WyJ1bmF1dGhlbnRpY2F0ZWQiXSwiaXNzIjoiaHR0cHM6Ly9jb2duaXRvLWlkZW50aXR5LmFtYXpvbmF3cy5jb20iLCJodHRwczovL2NvZ25pdG8taWRlbnRpdHkuYW1hem9uYXdzLmNvbS9pZGVudGl0eS1wb29sLWFybiI6ImFybjphd3M6Y29nbml0by1pZGVudGl0eTp1cy13ZXN0LTI6NDI4MDI4MjM5NDE0OmlkZW50aXR5cG9vbC91cy13ZXN0LTI6YTJmOWVlMGUtZTkxMy00YzZkLWFiOWMtMzk0YzJkMWQyNTVkIiwiZXhwIjoxNjY0ODI5MjExLCJpYXQiOjE2NjQ4Mjg2MTF9.jisWylTU7Gk8sgrk7FVI5C_KXwn3hJzvocUlq6Srk9Uody6y1bFv_okbKDE61-nWdajjsD1dSnnums0fF_338DPh7kizAk66zbFnSZYPZChqE_7vL-802bf1Hd1uWjjXcWtIAIXSu5RQSa9hYTHc9MWBkRRngd2OqsFq0M63QwB69CdtYwL3IA6DMLQMVrTj6bb4oQkKiMhIkJh4yi55BWAYrPVbW8VDH-R9i5282o02Ndb_NJPynogMv9kf4LMZNCNRPthDQ6J4EY8RbfVXCrIMlW1ZgA00lpqOtuenSaPxeIcwS3H2mRhsIfhXv0zsHH71OCBZ4ZLFiIHh8Fog5Q&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">15:27:32.981 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:9]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://commerce-api-stage.purple.com/carts&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/active-cart/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">897</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">15:27:33.245 request:
+1 &gt; GET https://commerce-api-stage.purple.com/carts/active-cart
+1 &gt; Authorization: Bearer eyJraWQiOiJ1cy13ZXN0LTIxIiwidHlwIjoiSldTIiwiYWxnIjoiUlM1MTIifQ.eyJzdWIiOiJ1cy13ZXN0LTI6YzE1ZmZlZmUtNDAwZS00MWVmLWIzZTAtM2FkYTk3Y2RhM2FiIiwiYXVkIjoidXMtd2VzdC0yOmEyZjllZTBlLWU5MTMtNGM2ZC1hYjljLTM5NGMyZDFkMjU1ZCIsImFtciI6WyJ1bmF1dGhlbnRpY2F0ZWQiXSwiaXNzIjoiaHR0cHM6Ly9jb2duaXRvLWlkZW50aXR5LmFtYXpvbmF3cy5jb20iLCJodHRwczovL2NvZ25pdG8taWRlbnRpdHkuYW1hem9uYXdzLmNvbS9pZGVudGl0eS1wb29sLWFybiI6ImFybjphd3M6Y29nbml0by1pZGVudGl0eTp1cy13ZXN0LTI6NDI4MDI4MjM5NDE0OmlkZW50aXR5cG9vbC91cy13ZXN0LTI6YTJmOWVlMGUtZTkxMy00YzZkLWFiOWMtMzk0YzJkMWQyNTVkIiwiZXhwIjoxNjY0ODI5MjExLCJpYXQiOjE2NjQ4Mjg2MTF9.jisWylTU7Gk8sgrk7FVI5C_KXwn3hJzvocUlq6Srk9Uody6y1bFv_okbKDE61-nWdajjsD1dSnnums0fF_338DPh7kizAk66zbFnSZYPZChqE_7vL-802bf1Hd1uWjjXcWtIAIXSu5RQSa9hYTHc9MWBkRRngd2OqsFq0M63QwB69CdtYwL3IA6DMLQMVrTj6bb4oQkKiMhIkJh4yi55BWAYrPVbW8VDH-R9i5282o02Ndb_NJPynogMv9kf4LMZNCNRPthDQ6J4EY8RbfVXCrIMlW1ZgA00lpqOtuenSaPxeIcwS3H2mRhsIfhXv0zsHH71OCBZ4ZLFiIHh8Fog5Q
+1 &gt; Host: commerce-api-stage.purple.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_333)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+15:27:33.889 response time in milliseconds: 641
+1 &lt; 200
+1 &lt; Date: Mon, 03 Oct 2022 20:27:33 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; x-envoy-upstream-service-time: 96
+1 &lt; apigw-requestid: ZcfUbjclvHcEMxw=
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 75486b4fb8f02c8c-ORD
+{&quot;id&quot;:&quot;a19fe940-59a5-4935-aa73-25b9bf61143e&quot;,&quot;customerEmail&quot;:&quot;vitalik.fomin@gmail.com&quot;,&quot;anonymousId&quot;:&quot;c15ffefe-400e-41ef-b3e0-3ada97cda3ab&quot;,&quot;customLineItems&quot;:[],&quot;shippingAddress&quot;:{&quot;firstName&quot;:&quot;Knopa&quot;,&quot;lastName&quot;:&quot;Fomina&quot;,&quot;streetName&quot;:&quot;352 Pembroke Court&quot;,&quot;postalCode&quot;:&quot;60193&quot;,&quot;city&quot;:&quot;Chicago&quot;,&quot;state&quot;:&quot;IL&quot;,&quot;country&quot;:&quot;US&quot;,&quot;email&quot;:&quot;vitalik.fomin@gmail.com&quot;},&quot;discountCodes&quot;:[],&quot;totalPrice&quot;:{&quot;type&quot;:&quot;centPrecision&quot;,&quot;currencyCode&quot;:&quot;USD&quot;,&quot;centAmount&quot;:855700,&quot;fractionDigits&quot;:2},&quot;taxedPrice&quot;:{&quot;totalNet&quot;:{&quot;type&quot;:&quot;centPrecision&quot;,&quot;currencyCode&quot;:&quot;USD&quot;,&quot;centAmount&quot;:855700,&quot;fractionDigits&quot;:2},&quot;totalGross&quot;:{&quot;type&quot;:&quot;centPrecision&quot;,&quot;currencyCode&quot;:&quot;USD&quot;,&quot;centAmount&quot;:909181,&quot;fractionDigits&quot;:2},&quot;taxPortions&quot;:[{&quot;name&quot;:&quot;IL STATE TAX&quot;,&quot;rate&quot;:0.0625,&quot;amount&quot;:{&quot;type&quot;:&quot;centPrecision&quot;,&quot;currencyCode&quot;:&quot;USD&quot;,&quot;centAmount&quot;:53481,&quot;fractionDigits&quot;:2}},{&quot;name&quot;:&quot;IL COUNTY TAX&quot;,&quot;rate&quot;:0,&quot;amount&quot;:{&quot;type&quot;:&quot;centPrecision&quot;,&quot;currencyCode&quot;:&quot;USD&quot;,&quot;centAmount&quot;:0,&quot;fractionDigits&quot;:2}},{&quot;name&quot;:&quot;IL CITY TAX&quot;,&quot;rate&quot;:0,&quot;amount&quot;:{&quot;type&quot;:&quot;centPrecision&quot;,&quot;currencyCode&quot;:&quot;USD&quot;,&quot;centAmount&quot;:0,&quot;fractionDigits&quot;:2}},{&quot;name&quot;:&quot;IL SPECIAL TAX&quot;,&quot;rate&quot;:0,&quot;amount&quot;:{&quot;type&quot;:&quot;centPrecision&quot;,&quot;currencyCode&quot;:&quot;USD&quot;,&quot;centAmount&quot;:0,&quot;fractionDigits&quot;:2}}]},&quot;lineItems&quot;:[{&quot;id&quot;:&quot;e7830bcc-5a29-47b3-9830-3575fbf50c49&quot;,&quot;productId&quot;:&quot;7e409626-d363-40af-b8cb-8a1b2dca597f&quot;,&quot;name&quot;:{&quot;en-US&quot;:&quot;Purple Plus Mattress&quot;},&quot;productSlug&quot;:{&quot;en-US&quot;:&quot;purple-plus-mattress&quot;},&quot;price&quot;:{&quot;id&quot;:&quot;1e1195ec-bec6-497f-b7dc-11fd28a7c0ca&quot;,&quot;value&quot;:{&quot;type&quot;:&quot;centPrecision&quot;,&quot;currencyCode&quot;:&quot;USD&quot;,&quot;centAmount&quot;:170900,&quot;fractionDigits&quot;:2}},&quot;taxedPrice&quot;:{&quot;totalNet&quot;:{&quot;type&quot;:&quot;centPrecision&quot;,&quot;currencyCode&quot;:&quot;USD&quot;,&quot;centAmount&quot;:854500,&quot;fractionDigits&quot;:2},&quot;totalGross&quot;:{&quot;type&quot;:&quot;centPrecision&quot;,&quot;currencyCode&quot;:&quot;USD&quot;,&quot;centAmount&quot;:907906,&quot;fractionDigits&quot;:2}},&quot;totalPrice&quot;:{&quot;type&quot;:&quot;centPrecision&quot;,&quot;currencyCode&quot;:&quot;USD&quot;,&quot;centAmount&quot;:854500,&quot;fractionDigits&quot;:2},&quot;quantity&quot;:5,&quot;addedAt&quot;:&quot;2022-10-03T20:27:06.816Z&quot;,&quot;taxRate&quot;:{&quot;name&quot;:&quot;Tax&quot;,&quot;amount&quot;:0.0625,&quot;includedInPrice&quot;:false,&quot;country&quot;:&quot;US&quot;,&quot;subRates&quot;:[{&quot;name&quot;:&quot;IL STATE TAX&quot;,&quot;amount&quot;:0.0625},{&quot;name&quot;:&quot;IL COUNTY TAX&quot;,&quot;amount&quot;:0},{&quot;name&quot;:&quot;IL CITY TAX&quot;,&quot;amount&quot;:0},{&quot;name&quot;:&quot;IL SPECIAL TAX&quot;,&quot;amount&quot;:0}]},&quot;discountedPricePerQuantity&quot;:[],&quot;custom&quot;:{&quot;type&quot;:{&quot;id&quot;:&quot;f76f4d3f-c1db-453f-be05-824ce5c72344&quot;,&quot;typeId&quot;:&quot;type&quot;},&quot;fields&quot;:{&quot;discounts_json&quot;:&quot;[{\&quot;id\&quot;:\&quot;2e88f502-c6dc-4f52-a159-c906971f76e4\&quot;,\&quot;display_name\&quot;:\&quot;10% Off\&quot;,\&quot;method\&quot;:\&quot;bundle\&quot;,\&quot;cent_amount\&quot;:19000}]&quot;}},&quot;variant&quot;:{&quot;sku&quot;:&quot;10-21-23964&quot;,&quot;key&quot;:&quot;1339374829615-40280567709885&quot;,&quot;images&quot;:[{&quot;url&quot;:&quot;https://3dda7f5498e1d0a4e548-35dbfeb9f1cff4e3cbbeca12d698efd4.ssl.cf1.rackcdn.com/PurplePlus-MrkHbbiD.png&quot;,&quot;dimensions&quot;:{&quot;w&quot;:600,&quot;h&quot;:400},&quot;label&quot;:&quot;&quot;}],&quot;attributes&quot;:[{&quot;name&quot;:&quot;title&quot;,&quot;value&quot;:&quot;Queen&quot;},{&quot;name&quot;:&quot;bundle-rank&quot;,&quot;value&quot;:0.9},{&quot;name&quot;:&quot;size&quot;,&quot;value&quot;:{&quot;key&quot;:&quot;queen&quot;,&quot;label&quot;:&quot;Queen&quot;}},{&quot;name&quot;:&quot;leasable&quot;,&quot;value&quot;:true},{&quot;name&quot;:&quot;ship-length&quot;,&quot;value&quot;:65},{&quot;name&quot;:&quot;ship-width&quot;,&quot;value&quot;:16.5},{&quot;name&quot;:&quot;ship-height&quot;,&quot;value&quot;:16.5},{&quot;name&quot;:&quot;ship-weight&quot;,&quot;value&quot;:111},{&quot;name&quot;:&quot;package-size&quot;,&quot;value&quot;:{&quot;key&quot;:&quot;whiteglove-eligible&quot;,&quot;label&quot;:&quot;whiteGloveItems&quot;}},{&quot;name&quot;:&quot;delivery-sla&quot;,&quot;value&quot;:&quot;1-4 days&quot;},{&quot;name&quot;:&quot;discountEngineIdentifier&quot;,&quot;value&quot;:&quot;9c2a9d9b-3a80-4597-ab6d-173174562f66&quot;},{&quot;name&quot;:&quot;productUrl&quot;,&quot;value&quot;:&quot;https://purple3qa2.prod.acquia-sites.com/mattresses/plus&quot;}],&quot;id&quot;:4},&quot;productKey&quot;:&quot;da8ce4ef-8d27-4490-a62b-293b20782a2b&quot;},{&quot;id&quot;:&quot;281f416c-6075-445b-a7a8-9357a04ff5ee&quot;,&quot;productId&quot;:&quot;d3479543-c630-4da9-9690-1bf58d15bd6e&quot;,&quot;name&quot;:{&quot;en&quot;:&quot;Replacement Seat Cushion Cover&quot;,&quot;en-US&quot;:&quot;Replacement Seat Cushion Cover&quot;},&quot;productSlug&quot;:{&quot;en&quot;:&quot;replacement-seat-cushion&quot;,&quot;en-US&quot;:&quot;replacement-seat-cushion&quot;},&quot;price&quot;:{&quot;id&quot;:&quot;0e27f55b-839f-4a19-a6f4-72239988173b&quot;,&quot;value&quot;:{&quot;type&quot;:&quot;centPrecision&quot;,&quot;currencyCode&quot;:&quot;USD&quot;,&quot;centAmount&quot;:1200,&quot;fractionDigits&quot;:2}},&quot;taxedPrice&quot;:{&quot;totalNet&quot;:{&quot;type&quot;:&quot;centPrecision&quot;,&quot;currencyCode&quot;:&quot;USD&quot;,&quot;centAmount&quot;:1200,&quot;fractionDigits&quot;:2},&quot;totalGross&quot;:{&quot;type&quot;:&quot;centPrecision&quot;,&quot;currencyCode&quot;:&quot;USD&quot;,&quot;centAmount&quot;:1275,&quot;fractionDigits&quot;:2}},&quot;totalPrice&quot;:{&quot;type&quot;:&quot;centPrecision&quot;,&quot;currencyCode&quot;:&quot;USD&quot;,&quot;centAmount&quot;:1200,&quot;fractionDigits&quot;:2},&quot;quantity&quot;:1,&quot;addedAt&quot;:&quot;2022-10-03T20:27:06.820Z&quot;,&quot;taxRate&quot;:{&quot;name&quot;:&quot;Tax&quot;,&quot;amount&quot;:0.0625,&quot;includedInPrice&quot;:false,&quot;country&quot;:&quot;US&quot;,&quot;subRates&quot;:[{&quot;name&quot;:&quot;IL STATE TAX&quot;,&quot;amount&quot;:0.0625},{&quot;name&quot;:&quot;IL COUNTY TAX&quot;,&quot;amount&quot;:0},{&quot;name&quot;:&quot;IL CITY TAX&quot;,&quot;amount&quot;:0},{&quot;name&quot;:&quot;IL SPECIAL TAX&quot;,&quot;amount&quot;:0}]},&quot;discountedPricePerQuantity&quot;:[],&quot;custom&quot;:{&quot;type&quot;:{&quot;id&quot;:&quot;f76f4d3f-c1db-453f-be05-824ce5c72344&quot;,&quot;typeId&quot;:&quot;type&quot;},&quot;fields&quot;:{&quot;discounts_json&quot;:&quot;[]&quot;}},&quot;variant&quot;:{&quot;sku&quot;:&quot;40-41-42035&quot;,&quot;key&quot;:&quot;4014606084-9576996831279&quot;,&quot;images&quot;:[],&quot;attributes&quot;:[{&quot;name&quot;:&quot;size&quot;,&quot;value&quot;:{&quot;key&quot;:&quot;royal-v2&quot;,&quot;label&quot;:&quot;The Royal V2 Purple&quot;}},{&quot;name&quot;:&quot;leasable&quot;,&quot;value&quot;:true},{&quot;name&quot;:&quot;ship-length&quot;,&quot;value&quot;:1},{&quot;name&quot;:&quot;ship-width&quot;,&quot;value&quot;:1},{&quot;name&quot;:&quot;ship-height&quot;,&quot;value&quot;:1},{&quot;name&quot;:&quot;ship-weight&quot;,&quot;value&quot;:1},{&quot;name&quot;:&quot;package-size&quot;,&quot;value&quot;:{&quot;key&quot;:&quot;fedex-eligible&quot;,&quot;label&quot;:&quot;smallerItems&quot;}},{&quot;name&quot;:&quot;ship-units&quot;,&quot;value&quot;:&quot;lbs&quot;},{&quot;name&quot;:&quot;inactive&quot;,&quot;value&quot;:false}],&quot;id&quot;:10,&quot;availability&quot;:{&quot;isOnStock&quot;:false,&quot;availableQuantity&quot;:0,&quot;channels&quot;:{&quot;e2562714-3140-4f9b-bc46-a47c46ccc6d4&quot;:{&quot;isOnStock&quot;:false,&quot;availableQuantity&quot;:0}}}},&quot;productKey&quot;:&quot;1d75298e-716a-4d5f-ad2e-c78bae4af992&quot;}],&quot;giftCards&quot;:[],&quot;versionModifiedAt&quot;:&quot;2022-10-03T20:27:07.171Z&quot;,&quot;shippingMode&quot;:&quot;Single&quot;,&quot;shipping&quot;:[],&quot;directDiscounts&quot;:[],&quot;totalLineItemQuantity&quot;:6,&quot;source&quot;:&quot;web&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response ==</span>
+      </div>
+    </div>
+    <div class="time-cell passed">20</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.14">{
+id: #string,
+customerId: #ignore,
+customerEmail: #string,
+anonymousId: #string,
+shippingAddress: #ignore,
+customLineItems: #array,
+discountCodes: #array,
+totalPrice: {
+    type: #string,
+    currencyCode: #string,
+    centAmount: #number,
+    fractionDigits: #number
+},
+taxedPrice: #ignore,
+lineItems: #array,
+giftCards: #array,
+versionModifiedAt: #string,
+shippingMode: #string,
+shipping: #array,
+directDiscounts: #array,
+totalLineItemQuantity: #ignore,
+source: #string
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

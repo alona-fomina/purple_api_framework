@@ -1,0 +1,70 @@
+-------------------------------------------------------------------------------
+Test set: conduitApp.ConduitTest
+-------------------------------------------------------------------------------
+Tests run: 78, Failures: 11, Errors: 0, Skipped: 0, Time elapsed: 174.151 s <<< FAILURE! - in conduitApp.ConduitTest
+testAll[2][1]  Time elapsed: 2.65 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 204, expected: 200, response time in milliseconds: 1201, url: https://api.realworld.io/api/articles/purple1-97030, response: 
+
+classpath:conduitApp/feature/Realworld.feature:40
+
+testAll[3][25]  Time elapsed: 0.554 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 400, expected: 200, response time in milliseconds: 552, url: https://commerce-api-stage.purple.com/carts/line-items, response: 
+{"errors":[{"code":"400","status":"400","title":"LineItem error: No published product with an sku '10-90-10075' exists."}]}
+classpath:conduitApp/purple/CartsAPIs.feature:48
+
+testAll[3][30]  Time elapsed: 0.769 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 400, expected: 200, response time in milliseconds: 768, url: https://commerce-api-stage.purple.com/carts/line-items, response: 
+{"errors":[{"code":"400","status":"400","title":"LineItem error: No published product with an sku '10-90-10074' exists."}]}
+classpath:conduitApp/purple/CartsAPIs.feature:48
+
+testAll[3][60]  Time elapsed: 0.403 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 500, expected: 200, response time in milliseconds: 403, url: https://commerce-api-stage.purple.com/carts/line-items, response: 
+{"errors":[{"code":"CARTS-003","status":"500","title":"Error requesting the discount engine","detail":"Error requesting the discount engine","meta":{"error":"Product with sku 10-41-1257488 does not exist","error_code":"Product_Does_Not_Exist"}}]}
+classpath:conduitApp/purple/CartsAPIs.feature:48
+
+testAll[3][61]  Time elapsed: 0.515 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 500, expected: 200, response time in milliseconds: 512, url: https://commerce-api-stage.purple.com/carts/line-items, response: 
+{"errors":[{"code":"CARTS-003","status":"500","title":"Error requesting the discount engine","detail":"Error requesting the discount engine","meta":{"error":"Product with sku 10-41-1258388 does not exist","error_code":"Product_Does_Not_Exist"}}]}
+classpath:conduitApp/purple/CartsAPIs.feature:48
+
+testAll[3][62]  Time elapsed: 0.511 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 500, expected: 200, response time in milliseconds: 506, url: https://commerce-api-stage.purple.com/carts/line-items, response: 
+{"errors":[{"code":"CARTS-003","status":"500","title":"Error requesting the discount engine","detail":"Error requesting the discount engine","meta":{"error":"Product with sku 10-41-1257388 does not exist","error_code":"Product_Does_Not_Exist"}}]}
+classpath:conduitApp/purple/CartsAPIs.feature:48
+
+testAll[3][63]  Time elapsed: 0.513 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 500, expected: 200, response time in milliseconds: 508, url: https://commerce-api-stage.purple.com/carts/line-items, response: 
+{"errors":[{"code":"CARTS-003","status":"500","title":"Error requesting the discount engine","detail":"Error requesting the discount engine","meta":{"error":"Product with sku 10-41-1256488 does not exist","error_code":"Product_Does_Not_Exist"}}]}
+classpath:conduitApp/purple/CartsAPIs.feature:48
+
+testAll[3][64]  Time elapsed: 0.448 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 500, expected: 200, response time in milliseconds: 443, url: https://commerce-api-stage.purple.com/carts/line-items, response: 
+{"errors":[{"code":"CARTS-003","status":"500","title":"Error requesting the discount engine","detail":"Error requesting the discount engine","meta":{"error":"Product with sku 10-41-1237888 does not exist","error_code":"Product_Does_Not_Exist"}}]}
+classpath:conduitApp/purple/CartsAPIs.feature:48
+
+testAll[3][65]  Time elapsed: 0.41 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 500, expected: 200, response time in milliseconds: 405, url: https://commerce-api-stage.purple.com/carts/line-items, response: 
+{"errors":[{"code":"CARTS-003","status":"500","title":"Error requesting the discount engine","detail":"Error requesting the discount engine","meta":{"error":"Product with sku 10-41-1257688 does not exist","error_code":"Product_Does_Not_Exist"}}]}
+classpath:conduitApp/purple/CartsAPIs.feature:48
+
+testAll[3][66]  Time elapsed: 0.411 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 500, expected: 200, response time in milliseconds: 407, url: https://commerce-api-stage.purple.com/carts/line-items, response: 
+{"errors":[{"code":"CARTS-003","status":"500","title":"Error requesting the discount engine","detail":"Error requesting the discount engine","meta":{"error":"Product with sku 10-41-1254088 does not exist","error_code":"Product_Does_Not_Exist"}}]}
+classpath:conduitApp/purple/CartsAPIs.feature:48
+
+testAll[3][67]  Time elapsed: 0.675 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 400, expected: 200, response time in milliseconds: 670, url: https://commerce-api-stage.purple.com/carts/line-items, response: 
+{"errors":[{"code":"400","status":"400","title":"LineItem error: No published product with an sku '10-31-12857' exists."}]}
+classpath:conduitApp/purple/CartsAPIs.feature:48
+

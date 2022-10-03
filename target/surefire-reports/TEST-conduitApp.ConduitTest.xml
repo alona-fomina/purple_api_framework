@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="conduitApp.ConduitTest" time="174.151" tests="78" errors="0" skipped="0" failures="11">
+  <properties>
+    <property name="java.specification.version" value="18"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/alona.f/Documents/Karate/KarateFramework/KarateFramework/target/test-classes:/Users/alona.f/Documents/Karate/KarateFramework/KarateFramework/target/classes:/Users/alona.f/.m2/repository/com/intuit/karate/karate-junit5/1.2.0/karate-junit5-1.2.0.jar:/Users/alona.f/.m2/repository/com/intuit/karate/karate-core/1.2.0/karate-core-1.2.0.jar:/Users/alona.f/.m2/repository/org/graalvm/js/js-scriptengine/21.2.0/js-scriptengine-21.2.0.jar:/Users/alona.f/.m2/repository/org/graalvm/sdk/graal-sdk/21.2.0/graal-sdk-21.2.0.jar:/Users/alona.f/.m2/repository/org/graalvm/js/js/21.2.0/js-21.2.0.jar:/Users/alona.f/.m2/repository/org/graalvm/regex/regex/21.2.0/regex-21.2.0.jar:/Users/alona.f/.m2/repository/org/graalvm/truffle/truffle-api/21.2.0/truffle-api-21.2.0.jar:/Users/alona.f/.m2/repository/com/ibm/icu/icu4j/69.1/icu4j-69.1.jar:/Users/alona.f/.m2/repository/org/thymeleaf/thymeleaf/3.0.14.RELEASE/thymeleaf-3.0.14.RELEASE.jar:/Users/alona.f/.m2/repository/ognl/ognl/3.1.26/ognl-3.1.26.jar:/Users/alona.f/.m2/repository/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar:/Users/alona.f/.m2/repository/org/attoparser/attoparser/2.0.5.RELEASE/attoparser-2.0.5.RELEASE.jar:/Users/alona.f/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar:/Users/alona.f/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/alona.f/.m2/repository/com/linecorp/armeria/armeria/1.13.4/armeria-1.13.4.jar:/Users/alona.f/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.0/jackson-core-2.13.0.jar:/Users/alona.f/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.0/jackson-annotations-2.13.0.jar:/Users/alona.f/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.0/jackson-databind-2.13.0.jar:/Users/alona.f/.m2/repository/io/micrometer/micrometer-core/1.7.6/micrometer-core-1.7.6.jar:/Users/alona.f/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.12/HdrHistogram-2.1.12.jar:/Users/alona.f/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar:/Users/alona.f/.m2/repository/io/netty/netty-transport/4.1.70.Final/netty-transport-4.1.70.Final.jar:/Users/alona.f/.m2/repository/io/netty/netty-common/4.1.70.Final/netty-common-4.1.70.Final.jar:/Users/alona.f/.m2/repository/io/netty/netty-buffer/4.1.70.Final/netty-buffer-4.1.70.Final.jar:/Users/alona.f/.m2/repository/io/netty/netty-resolver/4.1.70.Final/netty-resolver-4.1.70.Final.jar:/Users/alona.f/.m2/repository/io/netty/netty-codec-http2/4.1.70.Final/netty-codec-http2-4.1.70.Final.jar:/Users/alona.f/.m2/repository/io/netty/netty-codec/4.1.70.Final/netty-codec-4.1.70.Final.jar:/Users/alona.f/.m2/repository/io/netty/netty-handler/4.1.70.Final/netty-handler-4.1.70.Final.jar:/Users/alona.f/.m2/repository/io/netty/netty-codec-http/4.1.70.Final/netty-codec-http-4.1.70.Final.jar:/Users/alona.f/.m2/repository/io/netty/netty-codec-haproxy/4.1.70.Final/netty-codec-haproxy-4.1.70.Final.jar:/Users/alona.f/.m2/repository/io/netty/netty-resolver-dns/4.1.70.Final/netty-resolver-dns-4.1.70.Final.jar:/Users/alona.f/.m2/repository/io/netty/netty-codec-dns/4.1.70.Final/netty-codec-dns-4.1.70.Final.jar:/Users/alona.f/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/alona.f/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/alona.f/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.70.Final/netty-resolver-dns-native-macos-4.1.70.Final-osx-x86_64.jar:/Users/alona.f/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.70.Final/netty-resolver-dns-classes-macos-4.1.70.Final.jar:/Users/alona.f/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.70.Final/netty-transport-native-unix-common-4.1.70.Final-linux-x86_64.jar:/Users/alona.f/.m2/repository/io/netty/netty-transport-native-epoll/4.1.70.Final/netty-transport-native-epoll-4.1.70.Final-linux-x86_64.jar:/Users/alona.f/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.70.Final/netty-transport-native-unix-common-4.1.70.Final.jar:/Users/alona.f/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.70.Final/netty-transport-classes-epoll-4.1.70.Final.jar:/Users/alona.f/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.44.Final/netty-tcnative-boringssl-static-2.0.44.Final.jar:/Users/alona.f/.m2/repository/io/netty/netty-handler-proxy/4.1.70.Final/netty-handler-proxy-4.1.70.Final.jar:/Users/alona.f/.m2/repository/io/netty/netty-codec-socks/4.1.70.Final/netty-codec-socks-4.1.70.Final.jar:/Users/alona.f/.m2/repository/com/aayushatharva/brotli4j/brotli4j/1.6.0/brotli4j-1.6.0.jar:/Users/alona.f/.m2/repository/com/aayushatharva/brotli4j/native-osx-x86_64/1.6.0/native-osx-x86_64-1.6.0.jar:/Users/alona.f/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/alona.f/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/alona.f/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/alona.f/.m2/repository/ch/qos/logback/logback-classic/1.2.9/logback-classic-1.2.9.jar:/Users/alona.f/.m2/repository/ch/qos/logback/logback-core/1.2.9/logback-core-1.2.9.jar:/Users/alona.f/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.32/jcl-over-slf4j-1.7.32.jar:/Users/alona.f/.m2/repository/org/antlr/antlr4-runtime/4.9.2/antlr4-runtime-4.9.2.jar:/Users/alona.f/.m2/repository/com/jayway/jsonpath/json-path/2.7.0/json-path-2.7.0.jar:/Users/alona.f/.m2/repository/net/minidev/json-smart/2.4.7/json-smart-2.4.7.jar:/Users/alona.f/.m2/repository/net/minidev/accessors-smart/2.4.7/accessors-smart-2.4.7.jar:/Users/alona.f/.m2/repository/org/ow2/asm/asm/9.1/asm-9.1.jar:/Users/alona.f/.m2/repository/info/cukes/cucumber-java/1.2.5/cucumber-java-1.2.5.jar:/Users/alona.f/.m2/repository/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar:/Users/alona.f/.m2/repository/org/yaml/snakeyaml/1.29/snakeyaml-1.29.jar:/Users/alona.f/.m2/repository/de/siegmar/fastcsv/2.0.0/fastcsv-2.0.0.jar:/Users/alona.f/.m2/repository/info/picocli/picocli/4.6.1/picocli-4.6.1.jar:/Users/alona.f/.m2/repository/io/github/classgraph/classgraph/4.8.108/classgraph-4.8.108.jar:/Users/alona.f/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.2/junit-jupiter-api-5.7.2.jar:/Users/alona.f/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/alona.f/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/alona.f/.m2/repository/org/junit/platform/junit-platform-commons/1.7.2/junit-platform-commons-1.7.2.jar:/Users/alona.f/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.2/junit-jupiter-engine-5.7.2.jar:/Users/alona.f/.m2/repository/org/junit/platform/junit-platform-engine/1.7.2/junit-platform-engine-1.7.2.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="18"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/18.0.2.1/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/alona.f/Documents/Karate/KarateFramework/KarateFramework/target/surefire/surefirebooter12175224655078657391.jar /Users/alona.f/Documents/Karate/KarateFramework/KarateFramework/target/surefire 2022-09-27T18-06-58_318-jvmRun1 surefire17305376285492118109tmp surefire_01626297156620095890tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/alona.f/Documents/Karate/KarateFramework/KarateFramework/target/test-classes:/Users/alona.f/Documents/Karate/KarateFramework/KarateFramework/target/classes:/Users/alona.f/.m2/repository/com/intuit/karate/karate-junit5/1.2.0/karate-junit5-1.2.0.jar:/Users/alona.f/.m2/repository/com/intuit/karate/karate-core/1.2.0/karate-core-1.2.0.jar:/Users/alona.f/.m2/repository/org/graalvm/js/js-scriptengine/21.2.0/js-scriptengine-21.2.0.jar:/Users/alona.f/.m2/repository/org/graalvm/sdk/graal-sdk/21.2.0/graal-sdk-21.2.0.jar:/Users/alona.f/.m2/repository/org/graalvm/js/js/21.2.0/js-21.2.0.jar:/Users/alona.f/.m2/repository/org/graalvm/regex/regex/21.2.0/regex-21.2.0.jar:/Users/alona.f/.m2/repository/org/graalvm/truffle/truffle-api/21.2.0/truffle-api-21.2.0.jar:/Users/alona.f/.m2/repository/com/ibm/icu/icu4j/69.1/icu4j-69.1.jar:/Users/alona.f/.m2/repository/org/thymeleaf/thymeleaf/3.0.14.RELEASE/thymeleaf-3.0.14.RELEASE.jar:/Users/alona.f/.m2/repository/ognl/ognl/3.1.26/ognl-3.1.26.jar:/Users/alona.f/.m2/repository/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar:/Users/alona.f/.m2/repository/org/attoparser/attoparser/2.0.5.RELEASE/attoparser-2.0.5.RELEASE.jar:/Users/alona.f/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar:/Users/alona.f/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/alona.f/.m2/repository/com/linecorp/armeria/armeria/1.13.4/armeria-1.13.4.jar:/Users/alona.f/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.0/jackson-core-2.13.0.jar:/Users/alona.f/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.0/jackson-annotations-2.13.0.jar:/Users/alona.f/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.0/jackson-databind-2.13.0.jar:/Users/alona.f/.m2/repository/io/micrometer/micrometer-core/1.7.6/micrometer-core-1.7.6.jar:/Users/alona.f/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.12/HdrHistogram-2.1.12.jar:/Users/alona.f/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar:/Users/alona.f/.m2/repository/io/netty/netty-transport/4.1.70.Final/netty-transport-4.1.70.Final.jar:/Users/alona.f/.m2/repository/io/netty/netty-common/4.1.70.Final/netty-common-4.1.70.Final.jar:/Users/alona.f/.m2/repository/io/netty/netty-buffer/4.1.70.Final/netty-buffer-4.1.70.Final.jar:/Users/alona.f/.m2/repository/io/netty/netty-resolver/4.1.70.Final/netty-resolver-4.1.70.Final.jar:/Users/alona.f/.m2/repository/io/netty/netty-codec-http2/4.1.70.Final/netty-codec-http2-4.1.70.Final.jar:/Users/alona.f/.m2/repository/io/netty/netty-codec/4.1.70.Final/netty-codec-4.1.70.Final.jar:/Users/alona.f/.m2/repository/io/netty/netty-handler/4.1.70.Final/netty-handler-4.1.70.Final.jar:/Users/alona.f/.m2/repository/io/netty/netty-codec-http/4.1.70.Final/netty-codec-http-4.1.70.Final.jar:/Users/alona.f/.m2/repository/io/netty/netty-codec-haproxy/4.1.70.Final/netty-codec-haproxy-4.1.70.Final.jar:/Users/alona.f/.m2/repository/io/netty/netty-resolver-dns/4.1.70.Final/netty-resolver-dns-4.1.70.Final.jar:/Users/alona.f/.m2/repository/io/netty/netty-codec-dns/4.1.70.Final/netty-codec-dns-4.1.70.Final.jar:/Users/alona.f/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/alona.f/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/alona.f/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.70.Final/netty-resolver-dns-native-macos-4.1.70.Final-osx-x86_64.jar:/Users/alona.f/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.70.Final/netty-resolver-dns-classes-macos-4.1.70.Final.jar:/Users/alona.f/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.70.Final/netty-transport-native-unix-common-4.1.70.Final-linux-x86_64.jar:/Users/alona.f/.m2/repository/io/netty/netty-transport-native-epoll/4.1.70.Final/netty-transport-native-epoll-4.1.70.Final-linux-x86_64.jar:/Users/alona.f/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.70.Final/netty-transport-native-unix-common-4.1.70.Final.jar:/Users/alona.f/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.70.Final/netty-transport-classes-epoll-4.1.70.Final.jar:/Users/alona.f/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.44.Final/netty-tcnative-boringssl-static-2.0.44.Final.jar:/Users/alona.f/.m2/repository/io/netty/netty-handler-proxy/4.1.70.Final/netty-handler-proxy-4.1.70.Final.jar:/Users/alona.f/.m2/repository/io/netty/netty-codec-socks/4.1.70.Final/netty-codec-socks-4.1.70.Final.jar:/Users/alona.f/.m2/repository/com/aayushatharva/brotli4j/brotli4j/1.6.0/brotli4j-1.6.0.jar:/Users/alona.f/.m2/repository/com/aayushatharva/brotli4j/native-osx-x86_64/1.6.0/native-osx-x86_64-1.6.0.jar:/Users/alona.f/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/alona.f/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/alona.f/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/alona.f/.m2/repository/ch/qos/logback/logback-classic/1.2.9/logback-classic-1.2.9.jar:/Users/alona.f/.m2/repository/ch/qos/logback/logback-core/1.2.9/logback-core-1.2.9.jar:/Users/alona.f/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.32/jcl-over-slf4j-1.7.32.jar:/Users/alona.f/.m2/repository/org/antlr/antlr4-runtime/4.9.2/antlr4-runtime-4.9.2.jar:/Users/alona.f/.m2/repository/com/jayway/jsonpath/json-path/2.7.0/json-path-2.7.0.jar:/Users/alona.f/.m2/repository/net/minidev/json-smart/2.4.7/json-smart-2.4.7.jar:/Users/alona.f/.m2/repository/net/minidev/accessors-smart/2.4.7/accessors-smart-2.4.7.jar:/Users/alona.f/.m2/repository/org/ow2/asm/asm/9.1/asm-9.1.jar:/Users/alona.f/.m2/repository/info/cukes/cucumber-java/1.2.5/cucumber-java-1.2.5.jar:/Users/alona.f/.m2/repository/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar:/Users/alona.f/.m2/repository/org/yaml/snakeyaml/1.29/snakeyaml-1.29.jar:/Users/alona.f/.m2/repository/de/siegmar/fastcsv/2.0.0/fastcsv-2.0.0.jar:/Users/alona.f/.m2/repository/info/picocli/picocli/4.6.1/picocli-4.6.1.jar:/Users/alona.f/.m2/repository/io/github/classgraph/classgraph/4.8.108/classgraph-4.8.108.jar:/Users/alona.f/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.2/junit-jupiter-api-5.7.2.jar:/Users/alona.f/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/alona.f/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/alona.f/.m2/repository/org/junit/platform/junit-platform-commons/1.7.2/junit-platform-commons-1.7.2.jar:/Users/alona.f/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.2/junit-jupiter-engine-5.7.2.jar:/Users/alona.f/.m2/repository/org/junit/platform/junit-platform-engine/1.7.2/junit-platform-engine-1.7.2.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/alona.f"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-08-18"/>
+    <property name="java.home" value="/usr/local/Cellar/openjdk/18.0.2.1/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/alona.f/Documents/Karate/KarateFramework/KarateFramework"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="karate.options" value="--tags ~@ignore"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/alona.f/Documents/Karate/KarateFramework/KarateFramework/target/surefire/surefirebooter12175224655078657391.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="18.0.2.1+0"/>
+    <property name="user.name" value="alona.f"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="12.4"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/alona.f/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/yj/w2ryfk4d04v7m01720rkwdxr0000gp/T/"/>
+    <property name="java.version" value="18.0.2.1"/>
+    <property name="user.dir" value="/Users/alona.f/Documents/Karate/KarateFramework/KarateFramework"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/alona.f/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="18.0.2.1+0"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="62.0"/>
+  </properties>
+  <testcase name="testAll[1][1]" classname="conduitApp.ConduitTest" time="1.889"/>
+  <testcase name="testAll[2][1]" classname="conduitApp.ConduitTest" time="2.65">
+    <failure message="status code was: 204, expected: 200, response time in milliseconds: 1201, url: https://api.realworld.io/api/articles/purple1-97030, response: &#10;&#10;classpath:conduitApp/feature/Realworld.feature:40" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
+status code was: 204, expected: 200, response time in milliseconds: 1201, url: https://api.realworld.io/api/articles/purple1-97030, response: 
+
+classpath:conduitApp/feature/Realworld.feature:40
+</failure>
+    <system-out><![CDATA[18:07:01.845 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:07:01.885 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 62
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"purple1@gmail.com","password":"purple1234"}}
+
+18:07:02.139 [main] DEBUG com.intuit.karate - response time in milliseconds: 254
+1 < 200
+1 < Date: Tue, 27 Sep 2022 23:07:02 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"14e-Rdc9+CU0lsrj7aMPw9wJWDt64fk"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=14HpDORNLWMVFZkuNND7eKIPSb31%2BZ736e8h3BLN3H0pXRkIKFRWw%2BWvrhu3p7FCa2OzUnqNZ1NSOyPpeDP4vjxEGzcQgm99HQqlLASsqgjYrv5eTtbmX3HmR%2BgV%2FW8M%2FN%2FY"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7517e4a998302bd4-ORD
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"user":{"email":"purple1@gmail.com","username":"purple1","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InB1cnBsZTFAZ21haWwuY29tIiwidXNlcm5hbWUiOiJwdXJwbGUxIiwiaWF0IjoxNjY0MzIwMDIyLCJleHAiOjE2Njk1MDQwMjJ9.GoIyYVkF5ENorpzzn0kV0XblTkluCYmyTZqOrwuCRqk"}}
+
+18:07:02.145 [main] DEBUG com.intuit.karate - request:
+2 > POST https://api.realworld.io/api/articles
+2 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InB1cnBsZTFAZ21haWwuY29tIiwidXNlcm5hbWUiOiJwdXJwbGUxIiwiaWF0IjoxNjY0MzIwMDIyLCJleHAiOjE2Njk1MDQwMjJ9.GoIyYVkF5ENorpzzn0kV0XblTkluCYmyTZqOrwuCRqk
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 87
+2 > Host: api.realworld.io
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+2 > Accept-Encoding: gzip,deflate
+{"article":{"tagList":[],"title":"purple1","description":"about purple","body":"body"}}
+
+18:07:02.495 [main] DEBUG com.intuit.karate - response time in milliseconds: 349
+2 < 200
+2 < Date: Tue, 27 Sep 2022 23:07:02 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < Access-Control-Allow-Origin: *
+2 < Etag: W/"15a-YB2zGNgfVGtFdnIlJMeblcpnRfg"
+2 < Via: 1.1 vegur
+2 < CF-Cache-Status: DYNAMIC
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=FIiKHfzyiZlPxWTxU8FKuu1QWshO%2BmLwhAqQIWUlQTJunaD1VMhEFOQ76p2eMftecwMGEggh4ldq7u8BwyBAfvwzMlc0qhq%2FWxsoaUQoti2imj21AaPaLB9HGD1Bn96CjqfG"}],"group":"cf-nel","max_age":604800}
+2 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < CF-RAY: 7517e4ab18252bed-ORD
+2 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"article":{"slug":"purple1-97030","title":"purple1","description":"about purple","body":"body","tagList":[],"createdAt":"2022-09-27T23:07:02.434Z","updatedAt":"2022-09-27T23:07:02.434Z","favorited":false,"favoritesCount":0,"author":{"username":"purple1","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}}
+
+18:07:02.500 [main] DEBUG com.intuit.karate - request:
+3 > GET https://api.realworld.io/api/articles?offset=0&limit=10
+3 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InB1cnBsZTFAZ21haWwuY29tIiwidXNlcm5hbWUiOiJwdXJwbGUxIiwiaWF0IjoxNjY0MzIwMDIyLCJleHAiOjE2Njk1MDQwMjJ9.GoIyYVkF5ENorpzzn0kV0XblTkluCYmyTZqOrwuCRqk
+3 > Host: api.realworld.io
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+3 > Accept-Encoding: gzip,deflate
+
+
+18:07:02.884 [main] DEBUG com.intuit.karate - response time in milliseconds: 384
+3 < 200
+3 < Date: Tue, 27 Sep 2022 23:07:02 GMT
+3 < Content-Type: application/json; charset=utf-8
+3 < Transfer-Encoding: chunked
+3 < Connection: keep-alive
+3 < X-Powered-By: Express
+3 < Access-Control-Allow-Origin: *
+3 < Etag: W/"d79-2a0aMgJ1EZLhB6Zx52HEsqqfEBc"
+3 < Via: 1.1 vegur
+3 < CF-Cache-Status: DYNAMIC
+3 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Y%2FoXGEKCTYjIw%2Bel3BNKW4MzAt0zu3YkdCQrqpyME8u6phoZFht7tsyAB1EkpNIbrMS0bI4VFKo8FZbKJIwK7RsK5ooEbyXikVfyWycXkRPqBvbMFWNjicHFA%2FU%2FzlZaaX9V"}],"group":"cf-nel","max_age":604800}
+3 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+3 < Server: cloudflare
+3 < CF-RAY: 7517e4ad5f686384-ORD
+3 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"articles":[{"slug":"purple1-97030","title":"purple1","description":"about purple","body":"body","tagList":[],"createdAt":"2022-09-27T23:07:02.434Z","updatedAt":"2022-09-27T23:07:02.434Z","favorited":false,"favoritesCount":0,"author":{"username":"purple1","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"articleTitle-97030","title":"articleTitle","description":"about purple","body":"body","tagList":[],"createdAt":"2022-09-13T20:44:47.722Z","updatedAt":"2022-09-13T20:44:47.722Z","favorited":false,"favoritesCount":0,"author":{"username":"purple1","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Purple1-97030","title":"Purple1","description":"about purple","body":"body","tagList":[],"createdAt":"2022-09-13T20:38:56.992Z","updatedAt":"2022-09-13T20:38:56.992Z","favorited":false,"favoritesCount":0,"author":{"username":"purple1","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Purple12345678-97030","title":"Purple12345678","description":"about purple","body":"body","tagList":[],"createdAt":"2022-09-09T17:54:39.082Z","updatedAt":"2022-09-09T17:54:39.082Z","favorited":false,"favoritesCount":0,"author":{"username":"purple1","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Purple1234567-97030","title":"Purple1234567","description":"about purple","body":"body","tagList":[],"createdAt":"2022-09-09T17:51:30.377Z","updatedAt":"2022-09-09T17:51:30.377Z","favorited":false,"favoritesCount":0,"author":{"username":"purple1","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Purple123456-97030","title":"Purple123456","description":"about purple","body":"body","tagList":[],"createdAt":"2022-09-09T17:48:55.798Z","updatedAt":"2022-09-09T17:48:55.798Z","favorited":false,"favoritesCount":0,"author":{"username":"purple1","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Purple12345-97030","title":"Purple12345","description":"about purple","body":"body","tagList":[],"createdAt":"2022-09-09T17:45:39.769Z","updatedAt":"2022-09-09T17:45:39.769Z","favorited":false,"favoritesCount":0,"author":{"username":"purple1","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Purple123-97030","title":"Purple123","description":"about purple","body":"body","tagList":[],"createdAt":"2022-09-09T17:40:31.292Z","updatedAt":"2022-09-09T17:40:31.292Z","favorited":false,"favoritesCount":0,"author":{"username":"purple1","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"aaaaaaaaa-97030","title":"aaaaaaaaa","description":"about purple","body":"body","tagList":[],"createdAt":"2022-09-09T17:38:02.897Z","updatedAt":"2022-09-09T17:38:02.897Z","favorited":false,"favoritesCount":0,"author":{"username":"purple1","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"purpjjjje-97030","title":"purpjjjje","description":"about purple","body":"body","tagList":[],"createdAt":"2022-09-07T20:51:41.622Z","updatedAt":"2022-09-07T20:51:41.622Z","favorited":false,"favoritesCount":0,"author":{"username":"purple1","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":17}
+
+18:07:02.889 [main] DEBUG com.intuit.karate - request:
+4 > GET https://api.realworld.io/api/articles/purple1-97030
+4 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InB1cnBsZTFAZ21haWwuY29tIiwidXNlcm5hbWUiOiJwdXJwbGUxIiwiaWF0IjoxNjY0MzIwMDIyLCJleHAiOjE2Njk1MDQwMjJ9.GoIyYVkF5ENorpzzn0kV0XblTkluCYmyTZqOrwuCRqk
+4 > Host: api.realworld.io
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+4 > Accept-Encoding: gzip,deflate
+
+
+18:07:03.145 [main] DEBUG com.intuit.karate - response time in milliseconds: 255
+4 < 200
+4 < Date: Tue, 27 Sep 2022 23:07:03 GMT
+4 < Content-Type: application/json; charset=utf-8
+4 < Transfer-Encoding: chunked
+4 < Connection: keep-alive
+4 < X-Powered-By: Express
+4 < Access-Control-Allow-Origin: *
+4 < Etag: W/"15a-YB2zGNgfVGtFdnIlJMeblcpnRfg"
+4 < Via: 1.1 vegur
+4 < CF-Cache-Status: DYNAMIC
+4 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2B5yUXhzbPq7WYpQU4XssHvYQvbx2SmtHR1i3CCw%2BVpoFCxUyqe0C7O5mKjRa2q3lCnnwHa6BbskiFZlCMzM6P6NErQX6T%2BjSQ5yzMYm3TGgbeGUqe9b7DwbWAidto9Lr2avd"}],"group":"cf-nel","max_age":604800}
+4 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+4 < Server: cloudflare
+4 < CF-RAY: 7517e4afee7e2c28-ORD
+4 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"article":{"slug":"purple1-97030","title":"purple1","description":"about purple","body":"body","tagList":[],"createdAt":"2022-09-27T23:07:02.434Z","updatedAt":"2022-09-27T23:07:02.434Z","favorited":false,"favoritesCount":0,"author":{"username":"purple1","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}}
+
+18:07:03.148 [main] DEBUG com.intuit.karate - request:
+5 > DELETE https://api.realworld.io/api/articles/purple1-97030
+5 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InB1cnBsZTFAZ21haWwuY29tIiwidXNlcm5hbWUiOiJwdXJwbGUxIiwiaWF0IjoxNjY0MzIwMDIyLCJleHAiOjE2Njk1MDQwMjJ9.GoIyYVkF5ENorpzzn0kV0XblTkluCYmyTZqOrwuCRqk
+5 > Host: api.realworld.io
+5 > Connection: Keep-Alive
+5 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+5 > Accept-Encoding: gzip,deflate
+
+
+18:07:04.349 [main] DEBUG com.intuit.karate - response time in milliseconds: 1201
+5 < 204
+5 < Date: Tue, 27 Sep 2022 23:07:04 GMT
+5 < Content-Length: 0
+5 < Connection: keep-alive
+5 < X-Powered-By: Express
+5 < Access-Control-Allow-Origin: *
+5 < Etag: W/"a-bAsFyilMr4Ra1hIU5PyoyFRunpI"
+5 < Via: 1.1 vegur
+5 < CF-Cache-Status: DYNAMIC
+5 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=AIfJ%2FDFXcSNSB1v8ERtc9ERV2Ny6O%2Bxb1Z8eDoO2Ow%2FM%2FBhEmAtzrayiXjMvMn1%2Fv0LrsVQm7dh50StsS%2Fj5vh8W9aCdmLdL5%2BQsuSM6fBES%2F%2BaWw%2B1mWbqgctvddyGIrim9"}],"group":"cf-nel","max_age":604800}
+5 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+5 < Server: cloudflare
+5 < CF-RAY: 7517e4b16f866351-ORD
+5 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+
+18:07:04.350 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/Realworld.feature:40
+Then status 200
+status code was: 204, expected: 200, response time in milliseconds: 1201, url: https://api.realworld.io/api/articles/purple1-97030, response: 
+
+classpath:conduitApp/feature/Realworld.feature:40
+---------------------------------------------------------
+feature: classpath:conduitApp/feature/Realworld.feature
+scenarios:  1 | passed:  0 | failed:  1 | time: 2.5024
+---------------------------------------------------------
+
+]]></system-out>
+  </testcase>
+  <testcase name="testAll[3][1]" classname="conduitApp.ConduitTest" time="0.477"/>
+  <testcase name="testAll[3][2]" classname="conduitApp.ConduitTest" time="4.095"/>
+  <testcase name="testAll[3][3]" classname="conduitApp.ConduitTest" time="2.76"/>
+  <testcase name="testAll[3][4]" classname="conduitApp.ConduitTest" time="2.559"/>
+  <testcase name="testAll[3][5]" classname="conduitApp.ConduitTest" time="2.765"/>
+  <testcase name="testAll[3][6]" classname="conduitApp.ConduitTest" time="2.867"/>
+  <testcase name="testAll[3][7]" classname="conduitApp.ConduitTest" time="2.895"/>
+  <testcase name="testAll[3][8]" classname="conduitApp.ConduitTest" time="2.634"/>
+  <testcase name="testAll[3][9]" classname="conduitApp.ConduitTest" time="2.355"/>
+  <testcase name="testAll[3][10]" classname="conduitApp.ConduitTest" time="2.721"/>
+  <testcase name="testAll[3][11]" classname="conduitApp.ConduitTest" time="2.671"/>
+  <testcase name="testAll[3][12]" classname="conduitApp.ConduitTest" time="2.264"/>
+  <testcase name="testAll[3][13]" classname="conduitApp.ConduitTest" time="2.9"/>
+  <testcase name="testAll[3][14]" classname="conduitApp.ConduitTest" time="2.494"/>
+  <testcase name="testAll[3][15]" classname="conduitApp.ConduitTest" time="2.638"/>
+  <testcase name="testAll[3][16]" classname="conduitApp.ConduitTest" time="2.335"/>
+  <testcase name="testAll[3][17]" classname="conduitApp.ConduitTest" time="2.56"/>
+  <testcase name="testAll[3][18]" classname="conduitApp.ConduitTest" time="2.149"/>
+  <testcase name="testAll[3][19]" classname="conduitApp.ConduitTest" time="2.201"/>
+  <testcase name="testAll[3][20]" classname="conduitApp.ConduitTest" time="2.822"/>
+  <testcase name="testAll[3][21]" classname="conduitApp.ConduitTest" time="2.661"/>
+  <testcase name="testAll[3][22]" classname="conduitApp.ConduitTest" time="2.586"/>
+  <testcase name="testAll[3][23]" classname="conduitApp.ConduitTest" time="2.534"/>
+  <testcase name="testAll[3][24]" classname="conduitApp.ConduitTest" time="2.458"/>
+  <testcase name="testAll[3][25]" classname="conduitApp.ConduitTest" time="0.554">
+    <failure message="status code was: 400, expected: 200, response time in milliseconds: 552, url: https://commerce-api-stage.purple.com/carts/line-items, response: &#10;{&quot;errors&quot;:[{&quot;code&quot;:&quot;400&quot;,&quot;status&quot;:&quot;400&quot;,&quot;title&quot;:&quot;LineItem error: No published product with an sku &apos;10-90-10075&apos; exists.&quot;}]}&#10;classpath:conduitApp/purple/CartsAPIs.feature:48" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
+status code was: 400, expected: 200, response time in milliseconds: 552, url: https://commerce-api-stage.purple.com/carts/line-items, response: 
+{"errors":[{"code":"400","status":"400","title":"LineItem error: No published product with an sku '10-90-10075' exists."}]}
+classpath:conduitApp/purple/CartsAPIs.feature:48
+</failure>
+    <system-out><![CDATA[18:08:05.889 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:08:05.891 [main] DEBUG com.intuit.karate - request:
+1 > POST https://commerce-api-stage.purple.com/carts/line-items
+1 > Authorization: Bearer eyJraWQiOiJ1cy13ZXN0LTIxIiwidHlwIjoiSldTIiwiYWxnIjoiUlM1MTIifQ.eyJzdWIiOiJ1cy13ZXN0LTI6YzE1ZmZlZmUtNDAwZS00MWVmLWIzZTAtM2FkYTk3Y2RhM2FiIiwiYXVkIjoidXMtd2VzdC0yOmEyZjllZTBlLWU5MTMtNGM2ZC1hYjljLTM5NGMyZDFkMjU1ZCIsImFtciI6WyJ1bmF1dGhlbnRpY2F0ZWQiXSwiaXNzIjoiaHR0cHM6Ly9jb2duaXRvLWlkZW50aXR5LmFtYXpvbmF3cy5jb20iLCJodHRwczovL2NvZ25pdG8taWRlbnRpdHkuYW1hem9uYXdzLmNvbS9pZGVudGl0eS1wb29sLWFybiI6ImFybjphd3M6Y29nbml0by1pZGVudGl0eTp1cy13ZXN0LTI6NDI4MDI4MjM5NDE0OmlkZW50aXR5cG9vbC91cy13ZXN0LTI6YTJmOWVlMGUtZTkxMy00YzZkLWFiOWMtMzk0YzJkMWQyNTVkIiwiZXhwIjoxNjY0MzIwMTgyLCJpYXQiOjE2NjQzMTk1ODJ9.OrfrqfpygB1esFyxFfdjXguAt3pHZ3y-dOYgkO4wM4bNP0LKXtw7gjWjnOFw4O4h2f-Wby839jLc0aSFlGCETCoHWSG0oVB6dbNr8NsEB2a-Gbl7LZHQXe95D5jUeNNXTC_Jx0gY0z_e_9Obu6hhYZXzCyyzIPf5uA6s3Ef-uuIg5jwPGzcNw-GE3xuFP-Qsj6Dmrc1KnyxsQ_5nvyxgj0aPMKovruEnvpbHTlo20ELCDTCEuXGL1Z_z-ar0qvCLJiZcXUc844hgyhZicAT-ChtiAK5GSvUG3wQtNxHAAt5NV8QEZh1IZRsnG4wYLSQibfv_2tuVjMpOCCvV6Hk9cQ
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 37
+1 > Host: commerce-api-stage.purple.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+1 > Accept-Encoding: gzip,deflate
+[{"sku":"10-90-10075","quantitiy":1}]
+
+18:08:06.443 [main] DEBUG com.intuit.karate - response time in milliseconds: 552
+1 < 400
+1 < Date: Tue, 27 Sep 2022 23:08:06 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 123
+1 < Connection: keep-alive
+1 < x-envoy-upstream-service-time: 347
+1 < apigw-requestid: ZJFNeiu3vHcEQ_g=
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 7517e6398c08e1db-ORD
+{"errors":[{"code":"400","status":"400","title":"LineItem error: No published product with an sku '10-90-10075' exists."}]}
+
+18:08:06.443 [main] ERROR com.intuit.karate - classpath:conduitApp/purple/CartsAPIs.feature:48
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 552, url: https://commerce-api-stage.purple.com/carts/line-items, response: 
+{"errors":[{"code":"400","status":"400","title":"LineItem error: No published product with an sku '10-90-10075' exists."}]}
+classpath:conduitApp/purple/CartsAPIs.feature:48
+]]></system-out>
+  </testcase>
+  <testcase name="testAll[3][26]" classname="conduitApp.ConduitTest" time="2.32"/>
+  <testcase name="testAll[3][27]" classname="conduitApp.ConduitTest" time="2.785"/>
+  <testcase name="testAll[3][28]" classname="conduitApp.ConduitTest" time="2.738"/>
+  <testcase name="testAll[3][29]" classname="conduitApp.ConduitTest" time="2.457"/>
+  <testcase name="testAll[3][30]" classname="conduitApp.ConduitTest" time="0.769">
+    <failure message="status code was: 400, expected: 200, response time in milliseconds: 768, url: https://commerce-api-stage.purple.com/carts/line-items, response: &#10;{&quot;errors&quot;:[{&quot;code&quot;:&quot;400&quot;,&quot;status&quot;:&quot;400&quot;,&quot;title&quot;:&quot;LineItem error: No published product with an sku &apos;10-90-10074&apos; exists.&quot;}]}&#10;classpath:conduitApp/purple/CartsAPIs.feature:48" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
+status code was: 400, expected: 200, response time in milliseconds: 768, url: https://commerce-api-stage.purple.com/carts/line-items, response: 
+{"errors":[{"code":"400","status":"400","title":"LineItem error: No published product with an sku '10-90-10074' exists."}]}
+classpath:conduitApp/purple/CartsAPIs.feature:48
+</failure>
+    <system-out><![CDATA[18:08:16.744 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:08:16.745 [main] DEBUG com.intuit.karate - request:
+1 > POST https://commerce-api-stage.purple.com/carts/line-items
+1 > Authorization: Bearer eyJraWQiOiJ1cy13ZXN0LTIxIiwidHlwIjoiSldTIiwiYWxnIjoiUlM1MTIifQ.eyJzdWIiOiJ1cy13ZXN0LTI6YzE1ZmZlZmUtNDAwZS00MWVmLWIzZTAtM2FkYTk3Y2RhM2FiIiwiYXVkIjoidXMtd2VzdC0yOmEyZjllZTBlLWU5MTMtNGM2ZC1hYjljLTM5NGMyZDFkMjU1ZCIsImFtciI6WyJ1bmF1dGhlbnRpY2F0ZWQiXSwiaXNzIjoiaHR0cHM6Ly9jb2duaXRvLWlkZW50aXR5LmFtYXpvbmF3cy5jb20iLCJodHRwczovL2NvZ25pdG8taWRlbnRpdHkuYW1hem9uYXdzLmNvbS9pZGVudGl0eS1wb29sLWFybiI6ImFybjphd3M6Y29nbml0by1pZGVudGl0eTp1cy13ZXN0LTI6NDI4MDI4MjM5NDE0OmlkZW50aXR5cG9vbC91cy13ZXN0LTI6YTJmOWVlMGUtZTkxMy00YzZkLWFiOWMtMzk0YzJkMWQyNTVkIiwiZXhwIjoxNjY0MzIwMTgyLCJpYXQiOjE2NjQzMTk1ODJ9.OrfrqfpygB1esFyxFfdjXguAt3pHZ3y-dOYgkO4wM4bNP0LKXtw7gjWjnOFw4O4h2f-Wby839jLc0aSFlGCETCoHWSG0oVB6dbNr8NsEB2a-Gbl7LZHQXe95D5jUeNNXTC_Jx0gY0z_e_9Obu6hhYZXzCyyzIPf5uA6s3Ef-uuIg5jwPGzcNw-GE3xuFP-Qsj6Dmrc1KnyxsQ_5nvyxgj0aPMKovruEnvpbHTlo20ELCDTCEuXGL1Z_z-ar0qvCLJiZcXUc844hgyhZicAT-ChtiAK5GSvUG3wQtNxHAAt5NV8QEZh1IZRsnG4wYLSQibfv_2tuVjMpOCCvV6Hk9cQ
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 37
+1 > Host: commerce-api-stage.purple.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+1 > Accept-Encoding: gzip,deflate
+[{"sku":"10-90-10074","quantitiy":1}]
+
+18:08:17.513 [main] DEBUG com.intuit.karate - response time in milliseconds: 768
+1 < 400
+1 < Date: Tue, 27 Sep 2022 23:08:17 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 123
+1 < Connection: keep-alive
+1 < x-envoy-upstream-service-time: 403
+1 < apigw-requestid: ZJFPMg8avHcEMVw=
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 7517e67d5e632d32-ORD
+{"errors":[{"code":"400","status":"400","title":"LineItem error: No published product with an sku '10-90-10074' exists."}]}
+
+18:08:17.514 [main] ERROR com.intuit.karate - classpath:conduitApp/purple/CartsAPIs.feature:48
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 768, url: https://commerce-api-stage.purple.com/carts/line-items, response: 
+{"errors":[{"code":"400","status":"400","title":"LineItem error: No published product with an sku '10-90-10074' exists."}]}
+classpath:conduitApp/purple/CartsAPIs.feature:48
+]]></system-out>
+  </testcase>
+  <testcase name="testAll[3][31]" classname="conduitApp.ConduitTest" time="2.505"/>
+  <testcase name="testAll[3][32]" classname="conduitApp.ConduitTest" time="2.253"/>
+  <testcase name="testAll[3][33]" classname="conduitApp.ConduitTest" time="2.458"/>
+  <testcase name="testAll[3][34]" classname="conduitApp.ConduitTest" time="2.304"/>
+  <testcase name="testAll[3][35]" classname="conduitApp.ConduitTest" time="2.406"/>
+  <testcase name="testAll[3][36]" classname="conduitApp.ConduitTest" time="2.297"/>
+  <testcase name="testAll[3][37]" classname="conduitApp.ConduitTest" time="2.312"/>
+  <testcase name="testAll[3][38]" classname="conduitApp.ConduitTest" time="2.164"/>
+  <testcase name="testAll[3][39]" classname="conduitApp.ConduitTest" time="2.75"/>
+  <testcase name="testAll[3][40]" classname="conduitApp.ConduitTest" time="2.765"/>
+  <testcase name="testAll[3][41]" classname="conduitApp.ConduitTest" time="2.56"/>
+  <testcase name="testAll[3][42]" classname="conduitApp.ConduitTest" time="2.254"/>
+  <testcase name="testAll[3][43]" classname="conduitApp.ConduitTest" time="2.481"/>
+  <testcase name="testAll[3][44]" classname="conduitApp.ConduitTest" time="2.182"/>
+  <testcase name="testAll[3][45]" classname="conduitApp.ConduitTest" time="2.25"/>
+  <testcase name="testAll[3][46]" classname="conduitApp.ConduitTest" time="2.222"/>
+  <testcase name="testAll[3][47]" classname="conduitApp.ConduitTest" time="2.173"/>
+  <testcase name="testAll[3][48]" classname="conduitApp.ConduitTest" time="2.411"/>
+  <testcase name="testAll[3][49]" classname="conduitApp.ConduitTest" time="2.559"/>
+  <testcase name="testAll[3][50]" classname="conduitApp.ConduitTest" time="2.356"/>
+  <testcase name="testAll[3][51]" classname="conduitApp.ConduitTest" time="2.254"/>
+  <testcase name="testAll[3][52]" classname="conduitApp.ConduitTest" time="2.251"/>
+  <testcase name="testAll[3][53]" classname="conduitApp.ConduitTest" time="2.356"/>
+  <testcase name="testAll[3][54]" classname="conduitApp.ConduitTest" time="2.207"/>
+  <testcase name="testAll[3][55]" classname="conduitApp.ConduitTest" time="2.324"/>
+  <testcase name="testAll[3][56]" classname="conduitApp.ConduitTest" time="2.329"/>
+  <testcase name="testAll[3][57]" classname="conduitApp.ConduitTest" time="2.602"/>
+  <testcase name="testAll[3][58]" classname="conduitApp.ConduitTest" time="2.927"/>
+  <testcase name="testAll[3][59]" classname="conduitApp.ConduitTest" time="2.148"/>
+  <testcase name="testAll[3][60]" classname="conduitApp.ConduitTest" time="0.403">
+    <failure message="status code was: 500, expected: 200, response time in milliseconds: 403, url: https://commerce-api-stage.purple.com/carts/line-items, response: &#10;{&quot;errors&quot;:[{&quot;code&quot;:&quot;CARTS-003&quot;,&quot;status&quot;:&quot;500&quot;,&quot;title&quot;:&quot;Error requesting the discount engine&quot;,&quot;detail&quot;:&quot;Error requesting the discount engine&quot;,&quot;meta&quot;:{&quot;error&quot;:&quot;Product with sku 10-41-1257488 does not exist&quot;,&quot;error_code&quot;:&quot;Product_Does_Not_Exist&quot;}}]}&#10;classpath:conduitApp/purple/CartsAPIs.feature:48" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
+status code was: 500, expected: 200, response time in milliseconds: 403, url: https://commerce-api-stage.purple.com/carts/line-items, response: 
+{"errors":[{"code":"CARTS-003","status":"500","title":"Error requesting the discount engine","detail":"Error requesting the discount engine","meta":{"error":"Product with sku 10-41-1257488 does not exist","error_code":"Product_Does_Not_Exist"}}]}
+classpath:conduitApp/purple/CartsAPIs.feature:48
+</failure>
+    <system-out><![CDATA[18:09:26.576 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:09:26.577 [main] DEBUG com.intuit.karate - request:
+1 > POST https://commerce-api-stage.purple.com/carts/line-items
+1 > Authorization: Bearer eyJraWQiOiJ1cy13ZXN0LTIxIiwidHlwIjoiSldTIiwiYWxnIjoiUlM1MTIifQ.eyJzdWIiOiJ1cy13ZXN0LTI6YzE1ZmZlZmUtNDAwZS00MWVmLWIzZTAtM2FkYTk3Y2RhM2FiIiwiYXVkIjoidXMtd2VzdC0yOmEyZjllZTBlLWU5MTMtNGM2ZC1hYjljLTM5NGMyZDFkMjU1ZCIsImFtciI6WyJ1bmF1dGhlbnRpY2F0ZWQiXSwiaXNzIjoiaHR0cHM6Ly9jb2duaXRvLWlkZW50aXR5LmFtYXpvbmF3cy5jb20iLCJodHRwczovL2NvZ25pdG8taWRlbnRpdHkuYW1hem9uYXdzLmNvbS9pZGVudGl0eS1wb29sLWFybiI6ImFybjphd3M6Y29nbml0by1pZGVudGl0eTp1cy13ZXN0LTI6NDI4MDI4MjM5NDE0OmlkZW50aXR5cG9vbC91cy13ZXN0LTI6YTJmOWVlMGUtZTkxMy00YzZkLWFiOWMtMzk0YzJkMWQyNTVkIiwiZXhwIjoxNjY0MzIwMTgyLCJpYXQiOjE2NjQzMTk1ODJ9.OrfrqfpygB1esFyxFfdjXguAt3pHZ3y-dOYgkO4wM4bNP0LKXtw7gjWjnOFw4O4h2f-Wby839jLc0aSFlGCETCoHWSG0oVB6dbNr8NsEB2a-Gbl7LZHQXe95D5jUeNNXTC_Jx0gY0z_e_9Obu6hhYZXzCyyzIPf5uA6s3Ef-uuIg5jwPGzcNw-GE3xuFP-Qsj6Dmrc1KnyxsQ_5nvyxgj0aPMKovruEnvpbHTlo20ELCDTCEuXGL1Z_z-ar0qvCLJiZcXUc844hgyhZicAT-ChtiAK5GSvUG3wQtNxHAAt5NV8QEZh1IZRsnG4wYLSQibfv_2tuVjMpOCCvV6Hk9cQ
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 39
+1 > Host: commerce-api-stage.purple.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+1 > Accept-Encoding: gzip,deflate
+[{"sku":"10-41-1257488","quantitiy":1}]
+
+18:09:26.980 [main] DEBUG com.intuit.karate - response time in milliseconds: 403
+1 < 500
+1 < Date: Tue, 27 Sep 2022 23:09:27 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 246
+1 < Connection: keep-alive
+1 < x-envoy-upstream-service-time: 238
+1 < apigw-requestid: ZJFaFjCGvHcEMsQ=
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 7517e831dc9086f8-ORD
+{"errors":[{"code":"CARTS-003","status":"500","title":"Error requesting the discount engine","detail":"Error requesting the discount engine","meta":{"error":"Product with sku 10-41-1257488 does not exist","error_code":"Product_Does_Not_Exist"}}]}
+
+18:09:26.980 [main] ERROR com.intuit.karate - classpath:conduitApp/purple/CartsAPIs.feature:48
+Then status 200
+status code was: 500, expected: 200, response time in milliseconds: 403, url: https://commerce-api-stage.purple.com/carts/line-items, response: 
+{"errors":[{"code":"CARTS-003","status":"500","title":"Error requesting the discount engine","detail":"Error requesting the discount engine","meta":{"error":"Product with sku 10-41-1257488 does not exist","error_code":"Product_Does_Not_Exist"}}]}
+classpath:conduitApp/purple/CartsAPIs.feature:48
+]]></system-out>
+  </testcase>
+  <testcase name="testAll[3][61]" classname="conduitApp.ConduitTest" time="0.515">
+    <failure message="status code was: 500, expected: 200, response time in milliseconds: 512, url: https://commerce-api-stage.purple.com/carts/line-items, response: &#10;{&quot;errors&quot;:[{&quot;code&quot;:&quot;CARTS-003&quot;,&quot;status&quot;:&quot;500&quot;,&quot;title&quot;:&quot;Error requesting the discount engine&quot;,&quot;detail&quot;:&quot;Error requesting the discount engine&quot;,&quot;meta&quot;:{&quot;error&quot;:&quot;Product with sku 10-41-1258388 does not exist&quot;,&quot;error_code&quot;:&quot;Product_Does_Not_Exist&quot;}}]}&#10;classpath:conduitApp/purple/CartsAPIs.feature:48" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
+status code was: 500, expected: 200, response time in milliseconds: 512, url: https://commerce-api-stage.purple.com/carts/line-items, response: 
+{"errors":[{"code":"CARTS-003","status":"500","title":"Error requesting the discount engine","detail":"Error requesting the discount engine","meta":{"error":"Product with sku 10-41-1258388 does not exist","error_code":"Product_Does_Not_Exist"}}]}
+classpath:conduitApp/purple/CartsAPIs.feature:48
+</failure>
+    <system-out><![CDATA[18:09:26.983 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:09:26.984 [main] DEBUG com.intuit.karate - request:
+1 > POST https://commerce-api-stage.purple.com/carts/line-items
+1 > Authorization: Bearer eyJraWQiOiJ1cy13ZXN0LTIxIiwidHlwIjoiSldTIiwiYWxnIjoiUlM1MTIifQ.eyJzdWIiOiJ1cy13ZXN0LTI6YzE1ZmZlZmUtNDAwZS00MWVmLWIzZTAtM2FkYTk3Y2RhM2FiIiwiYXVkIjoidXMtd2VzdC0yOmEyZjllZTBlLWU5MTMtNGM2ZC1hYjljLTM5NGMyZDFkMjU1ZCIsImFtciI6WyJ1bmF1dGhlbnRpY2F0ZWQiXSwiaXNzIjoiaHR0cHM6Ly9jb2duaXRvLWlkZW50aXR5LmFtYXpvbmF3cy5jb20iLCJodHRwczovL2NvZ25pdG8taWRlbnRpdHkuYW1hem9uYXdzLmNvbS9pZGVudGl0eS1wb29sLWFybiI6ImFybjphd3M6Y29nbml0by1pZGVudGl0eTp1cy13ZXN0LTI6NDI4MDI4MjM5NDE0OmlkZW50aXR5cG9vbC91cy13ZXN0LTI6YTJmOWVlMGUtZTkxMy00YzZkLWFiOWMtMzk0YzJkMWQyNTVkIiwiZXhwIjoxNjY0MzIwMTgyLCJpYXQiOjE2NjQzMTk1ODJ9.OrfrqfpygB1esFyxFfdjXguAt3pHZ3y-dOYgkO4wM4bNP0LKXtw7gjWjnOFw4O4h2f-Wby839jLc0aSFlGCETCoHWSG0oVB6dbNr8NsEB2a-Gbl7LZHQXe95D5jUeNNXTC_Jx0gY0z_e_9Obu6hhYZXzCyyzIPf5uA6s3Ef-uuIg5jwPGzcNw-GE3xuFP-Qsj6Dmrc1KnyxsQ_5nvyxgj0aPMKovruEnvpbHTlo20ELCDTCEuXGL1Z_z-ar0qvCLJiZcXUc844hgyhZicAT-ChtiAK5GSvUG3wQtNxHAAt5NV8QEZh1IZRsnG4wYLSQibfv_2tuVjMpOCCvV6Hk9cQ
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 39
+1 > Host: commerce-api-stage.purple.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+1 > Accept-Encoding: gzip,deflate
+[{"sku":"10-41-1258388","quantitiy":1}]
+
+18:09:27.496 [main] DEBUG com.intuit.karate - response time in milliseconds: 512
+1 < 500
+1 < Date: Tue, 27 Sep 2022 23:09:27 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 246
+1 < Connection: keep-alive
+1 < x-envoy-upstream-service-time: 278
+1 < apigw-requestid: ZJFaJjlKvHcEMTg=
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 7517e83458a5e26d-ORD
+{"errors":[{"code":"CARTS-003","status":"500","title":"Error requesting the discount engine","detail":"Error requesting the discount engine","meta":{"error":"Product with sku 10-41-1258388 does not exist","error_code":"Product_Does_Not_Exist"}}]}
+
+18:09:27.496 [main] ERROR com.intuit.karate - classpath:conduitApp/purple/CartsAPIs.feature:48
+Then status 200
+status code was: 500, expected: 200, response time in milliseconds: 512, url: https://commerce-api-stage.purple.com/carts/line-items, response: 
+{"errors":[{"code":"CARTS-003","status":"500","title":"Error requesting the discount engine","detail":"Error requesting the discount engine","meta":{"error":"Product with sku 10-41-1258388 does not exist","error_code":"Product_Does_Not_Exist"}}]}
+classpath:conduitApp/purple/CartsAPIs.feature:48
+]]></system-out>
+  </testcase>
+  <testcase name="testAll[3][62]" classname="conduitApp.ConduitTest" time="0.511">
+    <failure message="status code was: 500, expected: 200, response time in milliseconds: 506, url: https://commerce-api-stage.purple.com/carts/line-items, response: &#10;{&quot;errors&quot;:[{&quot;code&quot;:&quot;CARTS-003&quot;,&quot;status&quot;:&quot;500&quot;,&quot;title&quot;:&quot;Error requesting the discount engine&quot;,&quot;detail&quot;:&quot;Error requesting the discount engine&quot;,&quot;meta&quot;:{&quot;error&quot;:&quot;Product with sku 10-41-1257388 does not exist&quot;,&quot;error_code&quot;:&quot;Product_Does_Not_Exist&quot;}}]}&#10;classpath:conduitApp/purple/CartsAPIs.feature:48" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
+status code was: 500, expected: 200, response time in milliseconds: 506, url: https://commerce-api-stage.purple.com/carts/line-items, response: 
+{"errors":[{"code":"CARTS-003","status":"500","title":"Error requesting the discount engine","detail":"Error requesting the discount engine","meta":{"error":"Product with sku 10-41-1257388 does not exist","error_code":"Product_Does_Not_Exist"}}]}
+classpath:conduitApp/purple/CartsAPIs.feature:48
+</failure>
+    <system-out><![CDATA[18:09:27.500 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:09:27.501 [main] DEBUG com.intuit.karate - request:
+1 > POST https://commerce-api-stage.purple.com/carts/line-items
+1 > Authorization: Bearer eyJraWQiOiJ1cy13ZXN0LTIxIiwidHlwIjoiSldTIiwiYWxnIjoiUlM1MTIifQ.eyJzdWIiOiJ1cy13ZXN0LTI6YzE1ZmZlZmUtNDAwZS00MWVmLWIzZTAtM2FkYTk3Y2RhM2FiIiwiYXVkIjoidXMtd2VzdC0yOmEyZjllZTBlLWU5MTMtNGM2ZC1hYjljLTM5NGMyZDFkMjU1ZCIsImFtciI6WyJ1bmF1dGhlbnRpY2F0ZWQiXSwiaXNzIjoiaHR0cHM6Ly9jb2duaXRvLWlkZW50aXR5LmFtYXpvbmF3cy5jb20iLCJodHRwczovL2NvZ25pdG8taWRlbnRpdHkuYW1hem9uYXdzLmNvbS9pZGVudGl0eS1wb29sLWFybiI6ImFybjphd3M6Y29nbml0by1pZGVudGl0eTp1cy13ZXN0LTI6NDI4MDI4MjM5NDE0OmlkZW50aXR5cG9vbC91cy13ZXN0LTI6YTJmOWVlMGUtZTkxMy00YzZkLWFiOWMtMzk0YzJkMWQyNTVkIiwiZXhwIjoxNjY0MzIwMTgyLCJpYXQiOjE2NjQzMTk1ODJ9.OrfrqfpygB1esFyxFfdjXguAt3pHZ3y-dOYgkO4wM4bNP0LKXtw7gjWjnOFw4O4h2f-Wby839jLc0aSFlGCETCoHWSG0oVB6dbNr8NsEB2a-Gbl7LZHQXe95D5jUeNNXTC_Jx0gY0z_e_9Obu6hhYZXzCyyzIPf5uA6s3Ef-uuIg5jwPGzcNw-GE3xuFP-Qsj6Dmrc1KnyxsQ_5nvyxgj0aPMKovruEnvpbHTlo20ELCDTCEuXGL1Z_z-ar0qvCLJiZcXUc844hgyhZicAT-ChtiAK5GSvUG3wQtNxHAAt5NV8QEZh1IZRsnG4wYLSQibfv_2tuVjMpOCCvV6Hk9cQ
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 39
+1 > Host: commerce-api-stage.purple.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+1 > Accept-Encoding: gzip,deflate
+[{"sku":"10-41-1257388","quantitiy":1}]
+
+18:09:28.007 [main] DEBUG com.intuit.karate - response time in milliseconds: 506
+1 < 500
+1 < Date: Tue, 27 Sep 2022 23:09:27 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 246
+1 < Connection: keep-alive
+1 < x-envoy-upstream-service-time: 242
+1 < apigw-requestid: ZJFaOhmnPHcEPIw=
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 7517e83799f5e14b-ORD
+{"errors":[{"code":"CARTS-003","status":"500","title":"Error requesting the discount engine","detail":"Error requesting the discount engine","meta":{"error":"Product with sku 10-41-1257388 does not exist","error_code":"Product_Does_Not_Exist"}}]}
+
+18:09:28.008 [main] ERROR com.intuit.karate - classpath:conduitApp/purple/CartsAPIs.feature:48
+Then status 200
+status code was: 500, expected: 200, response time in milliseconds: 506, url: https://commerce-api-stage.purple.com/carts/line-items, response: 
+{"errors":[{"code":"CARTS-003","status":"500","title":"Error requesting the discount engine","detail":"Error requesting the discount engine","meta":{"error":"Product with sku 10-41-1257388 does not exist","error_code":"Product_Does_Not_Exist"}}]}
+classpath:conduitApp/purple/CartsAPIs.feature:48
+]]></system-out>
+  </testcase>
+  <testcase name="testAll[3][63]" classname="conduitApp.ConduitTest" time="0.513">
+    <failure message="status code was: 500, expected: 200, response time in milliseconds: 508, url: https://commerce-api-stage.purple.com/carts/line-items, response: &#10;{&quot;errors&quot;:[{&quot;code&quot;:&quot;CARTS-003&quot;,&quot;status&quot;:&quot;500&quot;,&quot;title&quot;:&quot;Error requesting the discount engine&quot;,&quot;detail&quot;:&quot;Error requesting the discount engine&quot;,&quot;meta&quot;:{&quot;error&quot;:&quot;Product with sku 10-41-1256488 does not exist&quot;,&quot;error_code&quot;:&quot;Product_Does_Not_Exist&quot;}}]}&#10;classpath:conduitApp/purple/CartsAPIs.feature:48" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
+status code was: 500, expected: 200, response time in milliseconds: 508, url: https://commerce-api-stage.purple.com/carts/line-items, response: 
+{"errors":[{"code":"CARTS-003","status":"500","title":"Error requesting the discount engine","detail":"Error requesting the discount engine","meta":{"error":"Product with sku 10-41-1256488 does not exist","error_code":"Product_Does_Not_Exist"}}]}
+classpath:conduitApp/purple/CartsAPIs.feature:48
+</failure>
+    <system-out><![CDATA[18:09:28.011 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:09:28.012 [main] DEBUG com.intuit.karate - request:
+1 > POST https://commerce-api-stage.purple.com/carts/line-items
+1 > Authorization: Bearer eyJraWQiOiJ1cy13ZXN0LTIxIiwidHlwIjoiSldTIiwiYWxnIjoiUlM1MTIifQ.eyJzdWIiOiJ1cy13ZXN0LTI6YzE1ZmZlZmUtNDAwZS00MWVmLWIzZTAtM2FkYTk3Y2RhM2FiIiwiYXVkIjoidXMtd2VzdC0yOmEyZjllZTBlLWU5MTMtNGM2ZC1hYjljLTM5NGMyZDFkMjU1ZCIsImFtciI6WyJ1bmF1dGhlbnRpY2F0ZWQiXSwiaXNzIjoiaHR0cHM6Ly9jb2duaXRvLWlkZW50aXR5LmFtYXpvbmF3cy5jb20iLCJodHRwczovL2NvZ25pdG8taWRlbnRpdHkuYW1hem9uYXdzLmNvbS9pZGVudGl0eS1wb29sLWFybiI6ImFybjphd3M6Y29nbml0by1pZGVudGl0eTp1cy13ZXN0LTI6NDI4MDI4MjM5NDE0OmlkZW50aXR5cG9vbC91cy13ZXN0LTI6YTJmOWVlMGUtZTkxMy00YzZkLWFiOWMtMzk0YzJkMWQyNTVkIiwiZXhwIjoxNjY0MzIwMTgyLCJpYXQiOjE2NjQzMTk1ODJ9.OrfrqfpygB1esFyxFfdjXguAt3pHZ3y-dOYgkO4wM4bNP0LKXtw7gjWjnOFw4O4h2f-Wby839jLc0aSFlGCETCoHWSG0oVB6dbNr8NsEB2a-Gbl7LZHQXe95D5jUeNNXTC_Jx0gY0z_e_9Obu6hhYZXzCyyzIPf5uA6s3Ef-uuIg5jwPGzcNw-GE3xuFP-Qsj6Dmrc1KnyxsQ_5nvyxgj0aPMKovruEnvpbHTlo20ELCDTCEuXGL1Z_z-ar0qvCLJiZcXUc844hgyhZicAT-ChtiAK5GSvUG3wQtNxHAAt5NV8QEZh1IZRsnG4wYLSQibfv_2tuVjMpOCCvV6Hk9cQ
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 39
+1 > Host: commerce-api-stage.purple.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+1 > Accept-Encoding: gzip,deflate
+[{"sku":"10-41-1256488","quantitiy":1}]
+
+18:09:28.520 [main] DEBUG com.intuit.karate - response time in milliseconds: 508
+1 < 500
+1 < Date: Tue, 27 Sep 2022 23:09:28 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 246
+1 < Connection: keep-alive
+1 < x-envoy-upstream-service-time: 278
+1 < apigw-requestid: ZJFaTh5PvHcESgg=
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 7517e83aca108704-ORD
+{"errors":[{"code":"CARTS-003","status":"500","title":"Error requesting the discount engine","detail":"Error requesting the discount engine","meta":{"error":"Product with sku 10-41-1256488 does not exist","error_code":"Product_Does_Not_Exist"}}]}
+
+18:09:28.520 [main] ERROR com.intuit.karate - classpath:conduitApp/purple/CartsAPIs.feature:48
+Then status 200
+status code was: 500, expected: 200, response time in milliseconds: 508, url: https://commerce-api-stage.purple.com/carts/line-items, response: 
+{"errors":[{"code":"CARTS-003","status":"500","title":"Error requesting the discount engine","detail":"Error requesting the discount engine","meta":{"error":"Product with sku 10-41-1256488 does not exist","error_code":"Product_Does_Not_Exist"}}]}
+classpath:conduitApp/purple/CartsAPIs.feature:48
+]]></system-out>
+  </testcase>
+  <testcase name="testAll[3][64]" classname="conduitApp.ConduitTest" time="0.448">
+    <failure message="status code was: 500, expected: 200, response time in milliseconds: 443, url: https://commerce-api-stage.purple.com/carts/line-items, response: &#10;{&quot;errors&quot;:[{&quot;code&quot;:&quot;CARTS-003&quot;,&quot;status&quot;:&quot;500&quot;,&quot;title&quot;:&quot;Error requesting the discount engine&quot;,&quot;detail&quot;:&quot;Error requesting the discount engine&quot;,&quot;meta&quot;:{&quot;error&quot;:&quot;Product with sku 10-41-1237888 does not exist&quot;,&quot;error_code&quot;:&quot;Product_Does_Not_Exist&quot;}}]}&#10;classpath:conduitApp/purple/CartsAPIs.feature:48" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
+status code was: 500, expected: 200, response time in milliseconds: 443, url: https://commerce-api-stage.purple.com/carts/line-items, response: 
+{"errors":[{"code":"CARTS-003","status":"500","title":"Error requesting the discount engine","detail":"Error requesting the discount engine","meta":{"error":"Product with sku 10-41-1237888 does not exist","error_code":"Product_Does_Not_Exist"}}]}
+classpath:conduitApp/purple/CartsAPIs.feature:48
+</failure>
+    <system-out><![CDATA[18:09:28.524 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:09:28.525 [main] DEBUG com.intuit.karate - request:
+1 > POST https://commerce-api-stage.purple.com/carts/line-items
+1 > Authorization: Bearer eyJraWQiOiJ1cy13ZXN0LTIxIiwidHlwIjoiSldTIiwiYWxnIjoiUlM1MTIifQ.eyJzdWIiOiJ1cy13ZXN0LTI6YzE1ZmZlZmUtNDAwZS00MWVmLWIzZTAtM2FkYTk3Y2RhM2FiIiwiYXVkIjoidXMtd2VzdC0yOmEyZjllZTBlLWU5MTMtNGM2ZC1hYjljLTM5NGMyZDFkMjU1ZCIsImFtciI6WyJ1bmF1dGhlbnRpY2F0ZWQiXSwiaXNzIjoiaHR0cHM6Ly9jb2duaXRvLWlkZW50aXR5LmFtYXpvbmF3cy5jb20iLCJodHRwczovL2NvZ25pdG8taWRlbnRpdHkuYW1hem9uYXdzLmNvbS9pZGVudGl0eS1wb29sLWFybiI6ImFybjphd3M6Y29nbml0by1pZGVudGl0eTp1cy13ZXN0LTI6NDI4MDI4MjM5NDE0OmlkZW50aXR5cG9vbC91cy13ZXN0LTI6YTJmOWVlMGUtZTkxMy00YzZkLWFiOWMtMzk0YzJkMWQyNTVkIiwiZXhwIjoxNjY0MzIwMTgyLCJpYXQiOjE2NjQzMTk1ODJ9.OrfrqfpygB1esFyxFfdjXguAt3pHZ3y-dOYgkO4wM4bNP0LKXtw7gjWjnOFw4O4h2f-Wby839jLc0aSFlGCETCoHWSG0oVB6dbNr8NsEB2a-Gbl7LZHQXe95D5jUeNNXTC_Jx0gY0z_e_9Obu6hhYZXzCyyzIPf5uA6s3Ef-uuIg5jwPGzcNw-GE3xuFP-Qsj6Dmrc1KnyxsQ_5nvyxgj0aPMKovruEnvpbHTlo20ELCDTCEuXGL1Z_z-ar0qvCLJiZcXUc844hgyhZicAT-ChtiAK5GSvUG3wQtNxHAAt5NV8QEZh1IZRsnG4wYLSQibfv_2tuVjMpOCCvV6Hk9cQ
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 39
+1 > Host: commerce-api-stage.purple.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+1 > Accept-Encoding: gzip,deflate
+[{"sku":"10-41-1237888","quantitiy":1}]
+
+18:09:28.968 [main] DEBUG com.intuit.karate - response time in milliseconds: 443
+1 < 500
+1 < Date: Tue, 27 Sep 2022 23:09:29 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 246
+1 < Connection: keep-alive
+1 < x-envoy-upstream-service-time: 280
+1 < apigw-requestid: ZJFaYh32vHcEMkA=
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 7517e83dfc957f68-ORD
+{"errors":[{"code":"CARTS-003","status":"500","title":"Error requesting the discount engine","detail":"Error requesting the discount engine","meta":{"error":"Product with sku 10-41-1237888 does not exist","error_code":"Product_Does_Not_Exist"}}]}
+
+18:09:28.969 [main] ERROR com.intuit.karate - classpath:conduitApp/purple/CartsAPIs.feature:48
+Then status 200
+status code was: 500, expected: 200, response time in milliseconds: 443, url: https://commerce-api-stage.purple.com/carts/line-items, response: 
+{"errors":[{"code":"CARTS-003","status":"500","title":"Error requesting the discount engine","detail":"Error requesting the discount engine","meta":{"error":"Product with sku 10-41-1237888 does not exist","error_code":"Product_Does_Not_Exist"}}]}
+classpath:conduitApp/purple/CartsAPIs.feature:48
+]]></system-out>
+  </testcase>
+  <testcase name="testAll[3][65]" classname="conduitApp.ConduitTest" time="0.41">
+    <failure message="status code was: 500, expected: 200, response time in milliseconds: 405, url: https://commerce-api-stage.purple.com/carts/line-items, response: &#10;{&quot;errors&quot;:[{&quot;code&quot;:&quot;CARTS-003&quot;,&quot;status&quot;:&quot;500&quot;,&quot;title&quot;:&quot;Error requesting the discount engine&quot;,&quot;detail&quot;:&quot;Error requesting the discount engine&quot;,&quot;meta&quot;:{&quot;error&quot;:&quot;Product with sku 10-41-1257688 does not exist&quot;,&quot;error_code&quot;:&quot;Product_Does_Not_Exist&quot;}}]}&#10;classpath:conduitApp/purple/CartsAPIs.feature:48" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
+status code was: 500, expected: 200, response time in milliseconds: 405, url: https://commerce-api-stage.purple.com/carts/line-items, response: 
+{"errors":[{"code":"CARTS-003","status":"500","title":"Error requesting the discount engine","detail":"Error requesting the discount engine","meta":{"error":"Product with sku 10-41-1257688 does not exist","error_code":"Product_Does_Not_Exist"}}]}
+classpath:conduitApp/purple/CartsAPIs.feature:48
+</failure>
+    <system-out><![CDATA[18:09:28.972 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:09:28.973 [main] DEBUG com.intuit.karate - request:
+1 > POST https://commerce-api-stage.purple.com/carts/line-items
+1 > Authorization: Bearer eyJraWQiOiJ1cy13ZXN0LTIxIiwidHlwIjoiSldTIiwiYWxnIjoiUlM1MTIifQ.eyJzdWIiOiJ1cy13ZXN0LTI6YzE1ZmZlZmUtNDAwZS00MWVmLWIzZTAtM2FkYTk3Y2RhM2FiIiwiYXVkIjoidXMtd2VzdC0yOmEyZjllZTBlLWU5MTMtNGM2ZC1hYjljLTM5NGMyZDFkMjU1ZCIsImFtciI6WyJ1bmF1dGhlbnRpY2F0ZWQiXSwiaXNzIjoiaHR0cHM6Ly9jb2duaXRvLWlkZW50aXR5LmFtYXpvbmF3cy5jb20iLCJodHRwczovL2NvZ25pdG8taWRlbnRpdHkuYW1hem9uYXdzLmNvbS9pZGVudGl0eS1wb29sLWFybiI6ImFybjphd3M6Y29nbml0by1pZGVudGl0eTp1cy13ZXN0LTI6NDI4MDI4MjM5NDE0OmlkZW50aXR5cG9vbC91cy13ZXN0LTI6YTJmOWVlMGUtZTkxMy00YzZkLWFiOWMtMzk0YzJkMWQyNTVkIiwiZXhwIjoxNjY0MzIwMTgyLCJpYXQiOjE2NjQzMTk1ODJ9.OrfrqfpygB1esFyxFfdjXguAt3pHZ3y-dOYgkO4wM4bNP0LKXtw7gjWjnOFw4O4h2f-Wby839jLc0aSFlGCETCoHWSG0oVB6dbNr8NsEB2a-Gbl7LZHQXe95D5jUeNNXTC_Jx0gY0z_e_9Obu6hhYZXzCyyzIPf5uA6s3Ef-uuIg5jwPGzcNw-GE3xuFP-Qsj6Dmrc1KnyxsQ_5nvyxgj0aPMKovruEnvpbHTlo20ELCDTCEuXGL1Z_z-ar0qvCLJiZcXUc844hgyhZicAT-ChtiAK5GSvUG3wQtNxHAAt5NV8QEZh1IZRsnG4wYLSQibfv_2tuVjMpOCCvV6Hk9cQ
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 39
+1 > Host: commerce-api-stage.purple.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+1 > Accept-Encoding: gzip,deflate
+[{"sku":"10-41-1257688","quantitiy":1}]
+
+18:09:29.378 [main] DEBUG com.intuit.karate - response time in milliseconds: 405
+1 < 500
+1 < Date: Tue, 27 Sep 2022 23:09:29 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 246
+1 < Connection: keep-alive
+1 < x-envoy-upstream-service-time: 239
+1 < apigw-requestid: ZJFadgfoPHcEP1g=
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 7517e840cc05e118-ORD
+{"errors":[{"code":"CARTS-003","status":"500","title":"Error requesting the discount engine","detail":"Error requesting the discount engine","meta":{"error":"Product with sku 10-41-1257688 does not exist","error_code":"Product_Does_Not_Exist"}}]}
+
+18:09:29.379 [main] ERROR com.intuit.karate - classpath:conduitApp/purple/CartsAPIs.feature:48
+Then status 200
+status code was: 500, expected: 200, response time in milliseconds: 405, url: https://commerce-api-stage.purple.com/carts/line-items, response: 
+{"errors":[{"code":"CARTS-003","status":"500","title":"Error requesting the discount engine","detail":"Error requesting the discount engine","meta":{"error":"Product with sku 10-41-1257688 does not exist","error_code":"Product_Does_Not_Exist"}}]}
+classpath:conduitApp/purple/CartsAPIs.feature:48
+]]></system-out>
+  </testcase>
+  <testcase name="testAll[3][66]" classname="conduitApp.ConduitTest" time="0.411">
+    <failure message="status code was: 500, expected: 200, response time in milliseconds: 407, url: https://commerce-api-stage.purple.com/carts/line-items, response: &#10;{&quot;errors&quot;:[{&quot;code&quot;:&quot;CARTS-003&quot;,&quot;status&quot;:&quot;500&quot;,&quot;title&quot;:&quot;Error requesting the discount engine&quot;,&quot;detail&quot;:&quot;Error requesting the discount engine&quot;,&quot;meta&quot;:{&quot;error&quot;:&quot;Product with sku 10-41-1254088 does not exist&quot;,&quot;error_code&quot;:&quot;Product_Does_Not_Exist&quot;}}]}&#10;classpath:conduitApp/purple/CartsAPIs.feature:48" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
+status code was: 500, expected: 200, response time in milliseconds: 407, url: https://commerce-api-stage.purple.com/carts/line-items, response: 
+{"errors":[{"code":"CARTS-003","status":"500","title":"Error requesting the discount engine","detail":"Error requesting the discount engine","meta":{"error":"Product with sku 10-41-1254088 does not exist","error_code":"Product_Does_Not_Exist"}}]}
+classpath:conduitApp/purple/CartsAPIs.feature:48
+</failure>
+    <system-out><![CDATA[18:09:29.382 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:09:29.383 [main] DEBUG com.intuit.karate - request:
+1 > POST https://commerce-api-stage.purple.com/carts/line-items
+1 > Authorization: Bearer eyJraWQiOiJ1cy13ZXN0LTIxIiwidHlwIjoiSldTIiwiYWxnIjoiUlM1MTIifQ.eyJzdWIiOiJ1cy13ZXN0LTI6YzE1ZmZlZmUtNDAwZS00MWVmLWIzZTAtM2FkYTk3Y2RhM2FiIiwiYXVkIjoidXMtd2VzdC0yOmEyZjllZTBlLWU5MTMtNGM2ZC1hYjljLTM5NGMyZDFkMjU1ZCIsImFtciI6WyJ1bmF1dGhlbnRpY2F0ZWQiXSwiaXNzIjoiaHR0cHM6Ly9jb2duaXRvLWlkZW50aXR5LmFtYXpvbmF3cy5jb20iLCJodHRwczovL2NvZ25pdG8taWRlbnRpdHkuYW1hem9uYXdzLmNvbS9pZGVudGl0eS1wb29sLWFybiI6ImFybjphd3M6Y29nbml0by1pZGVudGl0eTp1cy13ZXN0LTI6NDI4MDI4MjM5NDE0OmlkZW50aXR5cG9vbC91cy13ZXN0LTI6YTJmOWVlMGUtZTkxMy00YzZkLWFiOWMtMzk0YzJkMWQyNTVkIiwiZXhwIjoxNjY0MzIwMTgyLCJpYXQiOjE2NjQzMTk1ODJ9.OrfrqfpygB1esFyxFfdjXguAt3pHZ3y-dOYgkO4wM4bNP0LKXtw7gjWjnOFw4O4h2f-Wby839jLc0aSFlGCETCoHWSG0oVB6dbNr8NsEB2a-Gbl7LZHQXe95D5jUeNNXTC_Jx0gY0z_e_9Obu6hhYZXzCyyzIPf5uA6s3Ef-uuIg5jwPGzcNw-GE3xuFP-Qsj6Dmrc1KnyxsQ_5nvyxgj0aPMKovruEnvpbHTlo20ELCDTCEuXGL1Z_z-ar0qvCLJiZcXUc844hgyhZicAT-ChtiAK5GSvUG3wQtNxHAAt5NV8QEZh1IZRsnG4wYLSQibfv_2tuVjMpOCCvV6Hk9cQ
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 39
+1 > Host: commerce-api-stage.purple.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+1 > Accept-Encoding: gzip,deflate
+[{"sku":"10-41-1254088","quantitiy":1}]
+
+18:09:29.790 [main] DEBUG com.intuit.karate - response time in milliseconds: 407
+1 < 500
+1 < Date: Tue, 27 Sep 2022 23:09:29 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 246
+1 < Connection: keep-alive
+1 < x-envoy-upstream-service-time: 238
+1 < apigw-requestid: ZJFahhzEPHcES-Q=
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 7517e8435cdfe213-ORD
+{"errors":[{"code":"CARTS-003","status":"500","title":"Error requesting the discount engine","detail":"Error requesting the discount engine","meta":{"error":"Product with sku 10-41-1254088 does not exist","error_code":"Product_Does_Not_Exist"}}]}
+
+18:09:29.790 [main] ERROR com.intuit.karate - classpath:conduitApp/purple/CartsAPIs.feature:48
+Then status 200
+status code was: 500, expected: 200, response time in milliseconds: 407, url: https://commerce-api-stage.purple.com/carts/line-items, response: 
+{"errors":[{"code":"CARTS-003","status":"500","title":"Error requesting the discount engine","detail":"Error requesting the discount engine","meta":{"error":"Product with sku 10-41-1254088 does not exist","error_code":"Product_Does_Not_Exist"}}]}
+classpath:conduitApp/purple/CartsAPIs.feature:48
+]]></system-out>
+  </testcase>
+  <testcase name="testAll[3][67]" classname="conduitApp.ConduitTest" time="0.675">
+    <failure message="status code was: 400, expected: 200, response time in milliseconds: 670, url: https://commerce-api-stage.purple.com/carts/line-items, response: &#10;{&quot;errors&quot;:[{&quot;code&quot;:&quot;400&quot;,&quot;status&quot;:&quot;400&quot;,&quot;title&quot;:&quot;LineItem error: No published product with an sku &apos;10-31-12857&apos; exists.&quot;}]}&#10;classpath:conduitApp/purple/CartsAPIs.feature:48" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
+status code was: 400, expected: 200, response time in milliseconds: 670, url: https://commerce-api-stage.purple.com/carts/line-items, response: 
+{"errors":[{"code":"400","status":"400","title":"LineItem error: No published product with an sku '10-31-12857' exists."}]}
+classpath:conduitApp/purple/CartsAPIs.feature:48
+</failure>
+    <system-out><![CDATA[18:09:29.794 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:09:29.795 [main] DEBUG com.intuit.karate - request:
+1 > POST https://commerce-api-stage.purple.com/carts/line-items
+1 > Authorization: Bearer eyJraWQiOiJ1cy13ZXN0LTIxIiwidHlwIjoiSldTIiwiYWxnIjoiUlM1MTIifQ.eyJzdWIiOiJ1cy13ZXN0LTI6YzE1ZmZlZmUtNDAwZS00MWVmLWIzZTAtM2FkYTk3Y2RhM2FiIiwiYXVkIjoidXMtd2VzdC0yOmEyZjllZTBlLWU5MTMtNGM2ZC1hYjljLTM5NGMyZDFkMjU1ZCIsImFtciI6WyJ1bmF1dGhlbnRpY2F0ZWQiXSwiaXNzIjoiaHR0cHM6Ly9jb2duaXRvLWlkZW50aXR5LmFtYXpvbmF3cy5jb20iLCJodHRwczovL2NvZ25pdG8taWRlbnRpdHkuYW1hem9uYXdzLmNvbS9pZGVudGl0eS1wb29sLWFybiI6ImFybjphd3M6Y29nbml0by1pZGVudGl0eTp1cy13ZXN0LTI6NDI4MDI4MjM5NDE0OmlkZW50aXR5cG9vbC91cy13ZXN0LTI6YTJmOWVlMGUtZTkxMy00YzZkLWFiOWMtMzk0YzJkMWQyNTVkIiwiZXhwIjoxNjY0MzIwMTgyLCJpYXQiOjE2NjQzMTk1ODJ9.OrfrqfpygB1esFyxFfdjXguAt3pHZ3y-dOYgkO4wM4bNP0LKXtw7gjWjnOFw4O4h2f-Wby839jLc0aSFlGCETCoHWSG0oVB6dbNr8NsEB2a-Gbl7LZHQXe95D5jUeNNXTC_Jx0gY0z_e_9Obu6hhYZXzCyyzIPf5uA6s3Ef-uuIg5jwPGzcNw-GE3xuFP-Qsj6Dmrc1KnyxsQ_5nvyxgj0aPMKovruEnvpbHTlo20ELCDTCEuXGL1Z_z-ar0qvCLJiZcXUc844hgyhZicAT-ChtiAK5GSvUG3wQtNxHAAt5NV8QEZh1IZRsnG4wYLSQibfv_2tuVjMpOCCvV6Hk9cQ
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 37
+1 > Host: commerce-api-stage.purple.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+1 > Accept-Encoding: gzip,deflate
+[{"sku":"10-31-12857","quantitiy":1}]
+
+18:09:30.465 [main] DEBUG com.intuit.karate - response time in milliseconds: 670
+1 < 400
+1 < Date: Tue, 27 Sep 2022 23:09:30 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 123
+1 < Connection: keep-alive
+1 < x-envoy-upstream-service-time: 426
+1 < apigw-requestid: ZJFalj9FvHcESaw=
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 7517e845e995e1df-ORD
+{"errors":[{"code":"400","status":"400","title":"LineItem error: No published product with an sku '10-31-12857' exists."}]}
+
+18:09:30.466 [main] ERROR com.intuit.karate - classpath:conduitApp/purple/CartsAPIs.feature:48
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 670, url: https://commerce-api-stage.purple.com/carts/line-items, response: 
+{"errors":[{"code":"400","status":"400","title":"LineItem error: No published product with an sku '10-31-12857' exists."}]}
+classpath:conduitApp/purple/CartsAPIs.feature:48
+]]></system-out>
+  </testcase>
+  <testcase name="testAll[3][68]" classname="conduitApp.ConduitTest" time="2.464"/>
+  <testcase name="testAll[3][69]" classname="conduitApp.ConduitTest" time="2.148"/>
+  <testcase name="testAll[3][70]" classname="conduitApp.ConduitTest" time="2.665"/>
+  <testcase name="testAll[3][71]" classname="conduitApp.ConduitTest" time="2.557"/>
+  <testcase name="testAll[3][72]" classname="conduitApp.ConduitTest" time="2.254"/>
+  <testcase name="testAll[3][73]" classname="conduitApp.ConduitTest" time="2.422"/>
+  <testcase name="testAll[3][74]" classname="conduitApp.ConduitTest" time="2.167"/>
+  <testcase name="testAll[3][75]" classname="conduitApp.ConduitTest" time="2.271"/>
+  <testcase name="testAll[3][76]" classname="conduitApp.ConduitTest" time="3.568"/>
+</testsuite>
