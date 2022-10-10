@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("99d4690a-c3cb-4ea3-be40-cf24bb756441",{name:"alona.f"});
+    posthog.capture("report_feature",{karate_version:"1.2.0",karate_meta:null});
+  }
+});
+</script>
+  
+    <title>src.test.java.conduitApp.purple.CartsAPIs</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-10-10 04:37:14 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[2:94]"><span>[2:94]</span> <span>Gets the available shipping methods for the active cart</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/conduitApp/purple/CartsAPIs.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Validation for Carts APIs</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:94]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">regression</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:94]</span>
+                <span class="scenario-name">Gets the available shipping methods for the active cart</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>2119</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:94]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:94]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = &quot;eyJraWQiOiJ1cy13ZXN0LTIxIiwidHlwIjoiSldTIiwiYWxnIjoiUlM1MTIifQ.eyJzdWIiOiJ1cy13ZXN0LTI6YzE1ZmZlZmUtNDAwZS00MWVmLWIzZTAtM2FkYTk3Y2RhM2FiIiwiYXVkIjoidXMtd2VzdC0yOmEyZjllZTBlLWU5MTMtNGM2ZC1hYjljLTM5NGMyZDFkMjU1ZCIsImFtciI6WyJ1bmF1dGhlbnRpY2F0ZWQiXSwiaXNzIjoiaHR0cHM6Ly9jb2duaXRvLWlkZW50aXR5LmFtYXpvbmF3cy5jb20iLCJodHRwczovL2NvZ25pdG8taWRlbnRpdHkuYW1hem9uYXdzLmNvbS9pZGVudGl0eS1wb29sLWFybiI6ImFybjphd3M6Y29nbml0by1pZGVudGl0eTp1cy13ZXN0LTI6NDI4MDI4MjM5NDE0OmlkZW50aXR5cG9vbC91cy13ZXN0LTI6YTJmOWVlMGUtZTkxMy00YzZkLWFiOWMtMzk0YzJkMWQyNTVkIiwiZXhwIjoxNjY1NDM0MzM0LCJpYXQiOjE2NjU0MzM3MzR9.TNsE9illfgLuJFa4A2SchBkRk047Rt99wPljU9H0uhHbfvx9GLDkOT3Fg_XQr9TJh3s4i2m9kUj0MJLiLZwaudkHKhOAWm6zrZhb2kMUL9tWIsexBOSIWeCfoK4jvZ-qznepgRP6Lw6VrOQ8gOXIPDUonpOBDpOd4G7QTUiMDgykZMcHSDsMO98LI1ZiQUycsJzl9_IQf2hoyBFtwf9uzO3uuO03G40ci72Ni6xdIby0cb58RnReM1LNgpqQMC8W85Q7c6bGMBifMBXvmSvRLBWgsHCo0NQo_AbnzbbLMQp91oCBhPYrpM7BrKz3ZeLGWK_ktRNws7fYz1r2-6--pw&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">16:37:12.480 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:94]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://commerce-api-stage.purple.com/carts&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.95">
+      <div class="step-ref passed">95</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/shipping-methods&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.96">
+      <div class="step-ref passed">96</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39;+ token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.97">
+      <div class="step-ref passed">97</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2113</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.97">16:37:12.742 request:
+1 &gt; GET https://commerce-api-stage.purple.com/carts/shipping-methods
+1 &gt; Authorization: Bearer eyJraWQiOiJ1cy13ZXN0LTIxIiwidHlwIjoiSldTIiwiYWxnIjoiUlM1MTIifQ.eyJzdWIiOiJ1cy13ZXN0LTI6YzE1ZmZlZmUtNDAwZS00MWVmLWIzZTAtM2FkYTk3Y2RhM2FiIiwiYXVkIjoidXMtd2VzdC0yOmEyZjllZTBlLWU5MTMtNGM2ZC1hYjljLTM5NGMyZDFkMjU1ZCIsImFtciI6WyJ1bmF1dGhlbnRpY2F0ZWQiXSwiaXNzIjoiaHR0cHM6Ly9jb2duaXRvLWlkZW50aXR5LmFtYXpvbmF3cy5jb20iLCJodHRwczovL2NvZ25pdG8taWRlbnRpdHkuYW1hem9uYXdzLmNvbS9pZGVudGl0eS1wb29sLWFybiI6ImFybjphd3M6Y29nbml0by1pZGVudGl0eTp1cy13ZXN0LTI6NDI4MDI4MjM5NDE0OmlkZW50aXR5cG9vbC91cy13ZXN0LTI6YTJmOWVlMGUtZTkxMy00YzZkLWFiOWMtMzk0YzJkMWQyNTVkIiwiZXhwIjoxNjY1NDM0MzM0LCJpYXQiOjE2NjU0MzM3MzR9.TNsE9illfgLuJFa4A2SchBkRk047Rt99wPljU9H0uhHbfvx9GLDkOT3Fg_XQr9TJh3s4i2m9kUj0MJLiLZwaudkHKhOAWm6zrZhb2kMUL9tWIsexBOSIWeCfoK4jvZ-qznepgRP6Lw6VrOQ8gOXIPDUonpOBDpOd4G7QTUiMDgykZMcHSDsMO98LI1ZiQUycsJzl9_IQf2hoyBFtwf9uzO3uuO03G40ci72Ni6xdIby0cb58RnReM1LNgpqQMC8W85Q7c6bGMBifMBXvmSvRLBWgsHCo0NQo_AbnzbbLMQp91oCBhPYrpM7BrKz3ZeLGWK_ktRNws7fYz1r2-6--pw
+1 &gt; Host: commerce-api-stage.purple.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_333)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:37:14.604 response time in milliseconds: 1860
+1 &lt; 403
+1 &lt; Date: Mon, 10 Oct 2022 21:37:14 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 23
+1 &lt; Connection: keep-alive
+1 &lt; apigw-requestid: ZzuFgiX6PHcEM8A=
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 75827efa885c6333-ORD
+{&quot;message&quot;:&quot;Forbidden&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.98">
+      <div class="step-ref failed">98</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.98">16:37:14.625 src/test/java/conduitApp/purple/CartsAPIs.feature:98
+Then status 200
+status code was: 403, expected: 200, response time in milliseconds: 1860, url: https://commerce-api-stage.purple.com/carts/shipping-methods, response: 
+{&quot;message&quot;:&quot;Forbidden&quot;}
+src/test/java/conduitApp/purple/CartsAPIs.feature:98
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.99">
+      <div class="step-ref skipped">99</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response ==</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.99">{
+key: #string
+name: #string
+groups: #array
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
